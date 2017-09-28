@@ -13,7 +13,7 @@ public class AppController  extends Application{
     public void onCreate() {
         super.onCreate();
 
-        //intialized default font
+        //initialized default font
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
                 .setDefaultFontPath("fonts/Lato-Bold.ttf")
                 .setFontAttrId(R.attr.fontPath)
