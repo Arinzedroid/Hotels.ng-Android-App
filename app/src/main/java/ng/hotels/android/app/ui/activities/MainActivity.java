@@ -1,4 +1,4 @@
-package ng.hotels.android.app;
+package ng.hotels.android.app.ui.activities;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import ng.hotels.android.app.R;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MainActivity extends AppCompatActivity {

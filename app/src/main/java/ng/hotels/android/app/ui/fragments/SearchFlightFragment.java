@@ -1,4 +1,4 @@
-package ng.hotels.android.app;
+package ng.hotels.android.app.ui.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,15 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import butterknife.ButterKnife;
+import ng.hotels.android.app.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class SearchFlightFragment extends Fragment {
-
-
-
 
     public SearchFlightFragment() {
         // Required empty public constructor

@@ -1,4 +1,4 @@
-package ng.hotels.android.app;
+package ng.hotels.android.app.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;

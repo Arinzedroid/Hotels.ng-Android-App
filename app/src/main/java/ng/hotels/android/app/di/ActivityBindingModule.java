@@ -1,7 +1,7 @@
 package ng.hotels.android.app.di;
 
 import dagger.Module;
-import ng.hotels.android.app.MainActivity;
+import ng.hotels.android.app.ui.activities.MainActivity;
 
 /**
  * Created by idee on 9/28/17.

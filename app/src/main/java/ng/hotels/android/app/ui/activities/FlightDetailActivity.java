@@ -1,9 +1,10 @@
-package ng.hotels.android.app;
+package ng.hotels.android.app.ui.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import butterknife.ButterKnife;
+import ng.hotels.android.app.R;
 
 public class FlightDetailActivity extends AppCompatActivity {
 
