@@ -39,7 +39,7 @@ public class LoginFragment extends Fragment {
     }
 
     @OnClick(R.id.text_sign_up)
-    public void clickSignUp(){
+    public void openSignUpFragment(){
         getActivity().getSupportFragmentManager().beginTransaction()
                 .replace(R.id.frame_user_authentication,new SignupFragment())
                 .commit();
