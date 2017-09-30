@@ -34,7 +34,11 @@
         <activity android:name=".ui.activities.FlightsListingActivity" />
         <activity android:name=".ui.activities.FlightDetailActivity" />
         <activity android:name=".ui.activities.UserAuthenticationActivity" />
-        <activity android:name=".SingleHotelPage"></activity>
+        <activity android:name=".SingleHotelPage" />
+        <activity
+            android:name=".ui.activities.OnBoardingActivity"
+            android:label="@string/title_activity_onboarding"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
