@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/top"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:id="@+id/hotel_thumbnail"/>
+
+        <TextView
+            android:textColor="@color/black"
+            fontPath="fonts/Lato-Regular.ttf"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/hotel_thumbnail"
+            android:id="@+id/hotel_name"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esuites"
+            tools:ignore="MissingPrefix" />
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            fontPath="fonts/Lato-Regular.ttf"
+            android:layout_below="@+id/hotel_name"
+            android:id="@+id/hotel_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asokoro Lagos"
+            tools:ignore="MissingPrefix" />
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:layout_marginRight="15dp"
+            fontPath="fonts/Lato-Bold.ttf"
+            android:layout_below="@+id/hotel_thumbnail"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/hotel_prize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₦20,000"
+            tools:ignore="MissingPrefix" />
+        <TextView
+            android:textSize="10sp"
+            android:layout_marginRight="15dp"
+            fontPath="fonts/Lato-Bold.ttf"
+            android:layout_below="@+id/hotel_prize"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:id="@+id/per_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PER NIGHT"
+            tools:ignore="MissingPrefix" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+</LinearLayout>
