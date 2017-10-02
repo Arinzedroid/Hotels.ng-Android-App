@@ -6,6 +6,10 @@ import android.os.Bundle;
 import butterknife.ButterKnife;
 import ng.hotels.android.app.R;
 
+/**
+ * Created by idee on 9/28/17.
+ */
+
 public class FlightDetailActivity extends AppCompatActivity {
 
     @Override

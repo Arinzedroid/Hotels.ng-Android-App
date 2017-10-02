@@ -9,6 +9,10 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import ng.hotels.android.app.R;
 
+/**
+ * Created by idee on 9/28/17.
+ */
+
 public class FlightsListingActivity extends AppCompatActivity {
 
     @BindView(R.id.recycler_view_flights_listing)
