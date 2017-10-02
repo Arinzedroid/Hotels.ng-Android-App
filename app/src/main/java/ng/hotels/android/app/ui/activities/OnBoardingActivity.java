@@ -73,7 +73,7 @@ public class OnBoardingActivity extends AppCompatActivity implements HasSupportF
         mViewPager.setCurrentItem(page);
         updateIndicators(page);
 
-        intent = new Intent(this, MainActivity.class);
+        intent = new Intent(this, HomeActivity.class);
 
         final int color1 = ContextCompat.getColor(this, R.color.white);
         final int color2 = ContextCompat.getColor(this, R.color.white);

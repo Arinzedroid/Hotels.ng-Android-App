@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/place_image"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/place"
+        />
+    <TextView
+        android:id="@+id/place_name"
+        fontPath="fonts/Lato-Regular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ibom Tropicana"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingPrefix" />
+    <TextView
+        android:id="@+id/place_descr"
+        fontPath="fonts/Lato-Regular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:ems="10"
+        android:text="Best entertainment..........."
+        android:textSize="10sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        tools:ignore="MissingPrefix" />
+</LinearLayout>
