@@ -6,31 +6,30 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RatingBar;
 import android.widget.TextView;
 
 import java.util.List;
 
 import ng.hotels.android.app.R;
-import ng.hotels.android.app.model.Hotels;
+import ng.hotels.android.app.model.Places;
 
 /**
  * Created by Nsikak on 10/1/17.
  */
 
-public class HotelsForYouAdapter extends RecyclerView.Adapter<HotelsForYouAdapter.ViewHolder> {
+public class FeaturedPlaceAdapter extends RecyclerView.Adapter<FeaturedPlaceAdapter.ViewHolder> {
 
-    private List<Hotels> modelArrayList;
+    private List<Places> modelArrayList;
 
-    public HotelsForYouAdapter(List<Hotels> models) {
+    public FeaturedPlaceAdapter(List<Places> models) {
         this.modelArrayList = models;
     }
 
     @Override
-    public HotelsForYouAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public FeaturedPlaceAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         Context context = parent.getContext();
-        int idForListItem = R.layout.hotels_for_you_layout;
+        int idForListItem = R.layout.featured_places_layout;
         LayoutInflater inflater = LayoutInflater.from(context);
         boolean attach = false;
 
@@ -41,13 +40,14 @@ public class HotelsForYouAdapter extends RecyclerView.Adapter<HotelsForYouAdapte
     }
 
     @Override
-    public void onBindViewHolder(final HotelsForYouAdapter.ViewHolder holder, final int position) {
+    public void onBindViewHolder(final FeaturedPlaceAdapter.ViewHolder holder, final int position) {
 
-        Hotels item = modelArrayList.get(position);
+        Places item = modelArrayList.get(position);
 
 
-        holder.hotelImage.setImageResource(item.getHotel_image());
-        holder.hotelName.setText(item.getHotel_name());
+        holder.placeImage.setImageResource(item.getPlace_image());
+        holder.placeName.setText(item.getPlace_name());
+        holder.placeDescr.setText(item.getPlace_descriptions());
 
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -68,18 +68,16 @@ public class HotelsForYouAdapter extends RecyclerView.Adapter<HotelsForYouAdapte
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public ImageView hotelImage;
-        public TextView hotelName,hotelPrice, hotelLocation;
-        public RatingBar hotelRating;
+        public ImageView placeImage;
+        public TextView placeName,placeDescr;
+
 
 
         public ViewHolder(View itemView) {
             super(itemView);
-            hotelImage = (ImageView) itemView.findViewById(R.id.hotel_thumbnail);
-            hotelName = (TextView) itemView.findViewById(R.id.hotel_name);
-            hotelPrice = (TextView) itemView.findViewById(R.id.hotel_prize);
-            hotelLocation= (TextView) itemView.findViewById(R.id.hotel_location);
-            hotelRating = itemView.findViewById(R.id.hotel_rating);
+            placeImage = (ImageView) itemView.findViewById(R.id.place_image);
+            placeName = (TextView) itemView.findViewById(R.id.place_name);
+            placeDescr= (TextView) itemView.findViewById(R.id.place_descr);
 
 
         }

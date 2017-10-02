@@ -1,9 +1,13 @@
 package ng.hotels.android.app.ui.activities;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -11,6 +15,8 @@ import ng.hotels.android.app.R;
 import ng.hotels.android.app.adapters.BottomBarAdapter;
 import ng.hotels.android.app.adapters.NoSwipePager;
 import ng.hotels.android.app.ui.fragments.HotelsFragments;
+import ng.hotels.android.app.ui.fragments.SearchFlightFragment;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -19,26 +25,37 @@ public class HomeActivity extends AppCompatActivity {
     private  BottomBarAdapter pagerAdapter;
     private BottomNavigationView navigation;
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            Fragment selectedFragment = null;
             switch (item.getItemId()) {
                 case R.id.navigation_hotel:
                     mTextMessage.setText("Hotel");
-                    return true;
+                    selectedFragment = new HotelsFragments();
+                    break;
                 case R.id.navigation_flight:
+                    selectedFragment = new SearchFlightFragment();
                     mTextMessage.setText(R.string.title_dashboard);
-                    return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    return true;
+                    break;
                 case R.id.navigation_wishlist:
-                return true;
+
+                break;
             }
-            return false;
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.frame_layout, selectedFragment);
+            transaction.commit();
+            return true;
         }
+
+
     };
 
     @Override
@@ -46,12 +63,19 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         mTextMessage = (TextView) findViewById(R.id.message);
          navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+        //Manually displaying the first fragment - one time only
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame_layout, new HotelsFragments());
+        transaction.commit();
 
-        setupViewPager();
+       // setupViewPager();
     }
 
     private void setupViewPager() {
@@ -60,7 +84,9 @@ public class HomeActivity extends AppCompatActivity {
         pagerAdapter = new BottomBarAdapter(getSupportFragmentManager());
 
         HotelsFragments hotelsFragments = new HotelsFragments();
+        SearchFlightFragment searchFlightFragment = new SearchFlightFragment();
         pagerAdapter.addFragments(hotelsFragments);
+        pagerAdapter.addFragments(searchFlightFragment);
 
 
         viewPager.setAdapter(pagerAdapter);

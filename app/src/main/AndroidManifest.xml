@@ -31,11 +31,7 @@
             android:name=".ui.activities.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ui.activities.FlightsListingActivity" />
         <activity android:name=".ui.activities.FlightDetailActivity" />
