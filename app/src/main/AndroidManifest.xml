@@ -36,7 +36,7 @@
         <activity android:name=".ui.activities.FlightsListingActivity" />
         <activity android:name=".ui.activities.FlightDetailActivity" />
         <activity android:name=".ui.activities.UserAuthenticationActivity" />
-        <activity android:name=".SingleHotelPage" />
+        <activity android:name=".ui.activities.SingleHotelPageActivity" />
         <activity
             android:name=".ui.activities.OnBoardingActivity"
             android:label="@string/title_activity_onboarding"
