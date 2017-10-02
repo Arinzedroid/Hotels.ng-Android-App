@@ -14,5 +14,18 @@
     <string name="facebook_app_id"></string>
     <string name="fb_login_protocol_scheme"></string>
     <string name="already_have_an_account">Already have an account?</string>
+    <string name="hotel_rating_wonderful">Wonderful</string>
+    <string name="overall_guest_score">overall guest score</string>
+    <string name="wifi">Wifi</string>
+    <string name="light">Light</string>
+    <string name="bar_lounge">Bar/Lounge</string>
+    <string name="dstv">DSTV</string>
+    <string name="title_activity_onboarding">OnboardingActivity</string>
+    <string name="section_format">Page %1$d</string>
+    <string name="finish">Finish</string>
+    <string name="skip">Skip</string>
+    <string name="hotel_booking">Hotel booking</string>
+    <string name="flight_booking">Flight booking</string>
+    <string name="better_prices">Better prices</string>
 
 </resources>

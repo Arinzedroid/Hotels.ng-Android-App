@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#2092e3</color>
     <color name="colorAccent">#F9B202</color>
     <color name="colorHint">#E1E1E1</color>
+    <color name="indicator_unselected">#4D000000</color>
+    <color name="white">#ffff</color>
+
+
 </resources>
