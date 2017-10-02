@@ -11,95 +11,94 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="395dp"
+            android:layout_width="0dp"
             android:layout_height="333dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:src="@drawable/top_back"
-            android:scaleType="fitXY"
+            android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:srcCompat="@drawable/single_hotel_rating_icon"
-            android:layout_marginStart="32dp" />
+            app:srcCompat="@drawable/single_hotel_rating_icon" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="24dp"
             android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
             android:layout_marginTop="20dp"
             android:text="@string/hotel_rating_wonderful"
             android:textColor="#404040"
             android:textSize="20sp"
             app:layout_constraintLeft_toRightOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            android:layout_marginStart="11dp" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="71dp"
+            android:layout_marginStart="71dp"
             android:text="TextView"
             android:textSize="11sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            tools:text="@string/overall_guest_score"
-            android:layout_marginStart="71dp" />
+            tools:text="@string/overall_guest_score" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
             android:text="TextView"
             android:textAppearance="@android:style/TextAppearance.Material.Headline"
-            app:layout_constraintRight_toRightOf="parent"
-            tools:text="9.8"
-            app:layout_constraintLeft_toRightOf="@+id/textView"
-            android:layout_marginLeft="1dp"
             app:layout_constraintHorizontal_bias="0.06"
-            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toRightOf="@+id/textView"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            android:layout_marginStart="1dp" />
+            tools:text="9.8" />
 
         <RatingBar
             android:id="@+id/ratingBar"
             style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="wrap_content"
             android:layout_height="17dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginTop="37dp"
             android:numStars="5"
             android:rating="4"
-            android:layout_marginRight="44dp"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="37dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            android:layout_marginEnd="44dp" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <View
-            android:layout_width="353dp"
+            android:id="@+id/view"
+            android:layout_width="0dp"
             android:layout_height="1dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginStart="29dp"
             android:layout_marginTop="78dp"
             android:background="#A6A9A9"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            android:layout_marginRight="29dp"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginLeft="29dp"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:id="@+id/view"
-            android:layout_marginStart="29dp"
-            android:layout_marginEnd="29dp" />
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -142,53 +141,60 @@
             app:srcCompat="@drawable/ic_tv_black_24dp" />
 
         <TextView
-            android:id="@+id/textView4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textColor="#4F4F4F"
-            android:textSize="10sp"
-            tools:text="@string/wifi"
-            tools:layout_editor_absoluteX="60dp"
-            tools:layout_editor_absoluteY="466dp" />
-
-        <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
             android:text="TextView"
             android:textColor="#4F4F4F"
             android:textSize="10sp"
-            tools:text="@string/light"
-            tools:layout_editor_absoluteX="141dp"
-            tools:layout_editor_absoluteY="466dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintLeft_toLeftOf="@+id/imageView4"
+            tools:text="@string/light" />
 
         <TextView
+            android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:text="TextView"
             android:textColor="#4F4F4F"
             android:textSize="10sp"
-            tools:text="@string/bar_lounge"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintLeft_toLeftOf="@+id/imageView3"
+            tools:text="@string/wifi" />
+
+        <TextView
             android:id="@+id/textView10"
-            tools:layout_editor_absoluteX="218dp"
-            tools:layout_editor_absoluteY="466dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="TextView"
+            android:textColor="#4F4F4F"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintLeft_toLeftOf="@+id/imageView5"
+            tools:text="@string/bar_lounge" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:text="TextView"
             android:textColor="#4F4F4F"
             android:textSize="10sp"
-            tools:text="@string/dstv"
-            tools:layout_editor_absoluteX="324dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintLeft_toLeftOf="@+id/imageView6"
+            tools:text="@string/dstv" />
 
         <View
             android:id="@+id/view2"
-            android:layout_width="353dp"
+            android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_marginEnd="29dp"
             android:layout_marginLeft="29dp"
@@ -200,6 +206,36 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/expand_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            expandableTextView:animDuration="200"
+            expandableTextView:layout_constraintHorizontal_bias="0.154"
+            expandableTextView:layout_constraintLeft_toLeftOf="parent"
+            expandableTextView:layout_constraintRight_toRightOf="parent"
+            expandableTextView:maxCollapsedLines="4"
+            tools:layout_editor_absoluteY="580dp">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:background="@android:color/transparent"
+                android:padding="16dp" />
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
