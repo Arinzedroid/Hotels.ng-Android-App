@@ -24,11 +24,11 @@
         <activity
             android:name=".ui.activities.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.activities.HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activities.FlightsListingActivity" />
         <activity android:name=".ui.activities.FlightDetailActivity" />
         <activity android:name=".ui.activities.UserAuthenticationActivity" />
@@ -37,8 +37,10 @@
             android:name=".ui.activities.OnBoardingActivity"
             android:label="@string/title_activity_onboarding"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.activities.BookingDetailsActivity"></activity>
-        <activity android:name=".ui.activities.SuccessfulBookingActivity"></activity>
+        <activity android:name=".ui.activities.BookingDetailsActivity" />
+        <activity android:name=".ui.activities.SuccessfulBookingActivity" />
+        <activity android:name=".ui.activities.BookingActivity" />
+        <activity android:name=".ui.activities.CardInfoActivity"></activity>
     </application>
 
 </manifest>
