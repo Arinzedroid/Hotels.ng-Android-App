@@ -3,6 +3,7 @@ package ng.hotels.android.app.ui.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -39,9 +40,12 @@ public class HotelsFragments extends Fragment {
       View rootView = inflater.inflate( R.layout.hotels_fragments, container,false);
 
         Toolbar toolbar = (Toolbar) rootView.findViewById(R.id.toolbar);
+        CollapsingToolbarLayout cap = rootView.findViewById(R.id.toolbar_layout);
         //for crate home button
         AppCompatActivity activity = (AppCompatActivity) getActivity();
         activity.setSupportActionBar(toolbar);
+        cap.setTitle(null);
+        cap.setTitleEnabled(false);
 
       //Hotels near you
         recyclerView2 = (RecyclerView) rootView.findViewById(R.id.hotels_list);
