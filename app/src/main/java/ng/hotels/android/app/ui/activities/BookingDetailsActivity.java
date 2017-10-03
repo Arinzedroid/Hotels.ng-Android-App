@@ -1,13 +1,15 @@
-package ng.hotels.android.app;
+package ng.hotels.android.app.ui.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class SingleHotelPage extends AppCompatActivity {
+import ng.hotels.android.app.R;
+
+public class BookingDetailsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.single_hotel_page);
+        setContentView(R.layout.activity_booking_details);
     }
 }

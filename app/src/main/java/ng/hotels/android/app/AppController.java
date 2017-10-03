@@ -24,7 +24,7 @@ public class AppController extends Application implements HasActivityInjector {
 
         //initialized default font
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/Lato-Bold.ttf")
+                .setDefaultFontPath("fonts/Lato-Regular.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );

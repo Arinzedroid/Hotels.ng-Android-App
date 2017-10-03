@@ -1,6 +1,19 @@
 <resources>
     <string name="app_name">Hotels.NG Android App</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_home">hotels.ng</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="title_hotel">Hotel</string>
+    <string name="title_Flight">Flight</string>
+    <string name="title_wishlist">Wishlist</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+         to pick up one of cards.\n\n"
+    </string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -28,5 +41,29 @@
     <string name="flight_booking">Flight booking</string>
     <string name="better_prices">Better prices</string>
     <string name="confirm_password">Confirm password</string>
+    <string name="hotels_for_you">Hotels for You</string>
+    <string name="feature_place">Featured Places</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="reservation_confirmation">Reservation Confirmation</string>
+    <string name="payment_summary">Payment Summary</string>
+    <string name="view_hotel_details">View hotel details</string>
+    <string name="price">Price</string>
+    <string name="reserved_by">Reserved by</string>
+    <string name="ref_num">Ref Number</string>
+    <string name="check_in">Check in</string>
+    <string name="room">Room</string>
+    <string name="reserved_for">Reserved for</string>
+    <string name="requests">Requests</string>
+    <string name="paid_by">Paid by</string>
+    <string name="includes">Includes</string>
+    <string name="dummy_ref">54FTH-486RY-KL455-SMNVG</string>
+    <string name="dummy_date">Sept 11, 2017</string>
+    <string name="dummy_room">Deluxe Double Room</string>
+    <string name="dummy_name">John Doe</string>
+    <string name="dummy_desc">1 Adult</string>
+    <string name="dummy_req">Twin beds, indoor pool.</string>
+    <string name="dummy_price">₦ 84,000</string>
+    <string name="dummy_incl">All inclusive</string>
+    <string name="dummy_email">johndoe@example.com</string>
 
 </resources>
