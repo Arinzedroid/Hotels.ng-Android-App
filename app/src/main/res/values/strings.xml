@@ -5,11 +5,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dont_have_an_account">Don\'t have an account?</string>
-    <string name="sign_up">Sign up</string>
-    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
     <string name="email_address">Email address</string>
     <string name="password">Password</string>
-    <string name="forgot_password">Forgot password?</string>
+    <string name="forgot_password">forgot password?</string>
 
     <string name="facebook_app_id"></string>
     <string name="fb_login_protocol_scheme"></string>
@@ -27,5 +27,6 @@
     <string name="hotel_booking">Hotel booking</string>
     <string name="flight_booking">Flight booking</string>
     <string name="better_prices">Better prices</string>
+    <string name="confirm_password">Confirm password</string>
 
 </resources>
