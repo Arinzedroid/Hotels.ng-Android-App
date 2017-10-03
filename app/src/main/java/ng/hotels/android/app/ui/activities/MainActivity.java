@@ -1,6 +1,7 @@
 package ng.hotels.android.app.ui.activities;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -59,4 +60,28 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void openHompage(View view) {
+        startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+    }
+
+    public void openLoginpage(View view) {
+        startActivity(new Intent(getApplicationContext(), UserAuthenticationActivity.class));
+    }
+
+
+
+    public void openSingleHotel(View view) {
+        startActivity(new Intent(getApplicationContext(), SingleHotelPageActivity.class));
+    }
+
+    public void openPaymentSuccess(View view) {
+        startActivity(new Intent(getApplicationContext(), SuccessfulBookingActivity.class));
+    }
+
+    public void openFlightDetails(View view) {
+        startActivity(new Intent(getApplicationContext(), FlightDetailActivity.class));
+    }
+
+
 }

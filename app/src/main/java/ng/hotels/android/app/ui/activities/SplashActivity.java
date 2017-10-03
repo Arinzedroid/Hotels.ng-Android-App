@@ -22,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
         if (PreferenceUtils.isThisUserFirstTime(this))
             intent = new Intent(this, OnBoardingActivity.class);
         else
-            intent = new Intent(this, HomeActivity.class);
+            intent = new Intent(this, MainActivity.class);
 
         startActivity(intent);
         finish();

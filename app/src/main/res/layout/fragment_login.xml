@@ -1,34 +1,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout_fragment_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:id="@+id/linear_layout_fragment_login"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context="ng.hotels.android.app.ui.fragments.LoginFragment">
 
     <com.google.android.gms.common.SignInButton
-        android:id="@+id/sign_in_button"
+        android:layout_marginTop="100dp"
+        android:id="@+id/google_sign_in_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <com.facebook.login.widget.LoginButton
+        android:layout_marginTop="12dp"
         android:id="@+id/button_facebook_login"
+        android:layout_marginBottom="8dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-         />
+        android:layout_height="wrap_content" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
+            android:id="@+id/email_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorPrimary"
             android:hint="@string/email_address"
             android:inputType="textEmailAddress"
+            android:padding="16dp"
             android:singleLine="true"
             android:textColorHighlight="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary" />
@@ -40,11 +43,13 @@
         android:layout_height="wrap_content">
 
         <EditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorPrimary"
             android:hint="@string/password"
             android:inputType="textPassword"
+            android:padding="16dp"
             android:singleLine="true"
             android:textColorHighlight="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary" />
@@ -55,14 +60,23 @@
         android:id="@+id/text_forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="@string/forgot_password"
+        android:textColor="@color/colorPrimary"
         android:clickable="true"
         android:focusable="true" />
 
 
     <Button
-        android:textColor="@color/colorPrimary"
+        android:id="@+id/sign_in_button"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_marginTop="20dp"
+        android:minHeight="16dp"
+        android:minWidth="16dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
         android:background="@drawable/rounded_corner_blue_border"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -73,6 +87,7 @@
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="horizontal">
 
         <TextView

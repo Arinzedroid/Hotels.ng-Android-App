@@ -32,7 +32,7 @@
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                     android:textColor="@android:color/white"
                     android:textSize="50sp"
-                    tools:text="LOS" />
+                    android:text="LOS" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -40,7 +40,7 @@
                     android:layout_gravity="center"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                     android:textColor="@android:color/white"
-                    tools:text="Lagos" />
+                    android:text="Lagos" />
 
             </LinearLayout>
 
@@ -65,7 +65,7 @@
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                     android:textColor="@android:color/white"
                     android:textSize="50sp"
-                    tools:text="QUO" />
+                    android:text="QUO" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -73,7 +73,7 @@
                     android:layout_gravity="center"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                     android:textColor="@android:color/white"
-                    tools:text="Uyo" />
+                    android:text="Uyo" />
 
             </LinearLayout>
 
@@ -106,13 +106,13 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            tools:text="Sat 9th Sept" />
+                            android:text="Sat 9th Sept" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="30sp"
-                            tools:text="11:00" />
+                            android:text="11:00" />
 
                     </LinearLayout>
 
@@ -133,12 +133,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            tools:text="1hr:00min" />
+                            android:text="1hr:00min" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            tools:text="Direct" />
+                            android:text="Direct" />
 
                     </LinearLayout>
 
@@ -153,13 +153,13 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            tools:text="Sun 10th Sept" />
+                            android:text="Sun 10th Sept" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="30sp"
-                            tools:text="12:00" />
+                            android:text="12:00" />
 
                     </LinearLayout>
 
@@ -170,26 +170,26 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginTop="20dp"
-                    tools:text="PASSENGERS" />
+                    android:text="PASSENGERS" />
 
                 <android.support.v7.widget.AppCompatEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                    tools:text="2 Adults" />
+                    android:text="2 Adults" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginTop="10dp"
-                    tools:text="CABIN CLASS" />
+                    android:text="CABIN CLASS" />
 
                 <android.support.v7.widget.AppCompatEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                    tools:text="Economy" />
+                    android:text="Economy" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -200,7 +200,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:text="Total" />
+                        android:text="Total" />
 
                     <View
                         android:layout_width="0dp"
@@ -212,7 +212,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                         android:textSize="30sp"
-                        tools:text="N20,000" />
+                        android:text="N20,000" />
 
                 </LinearLayout>
 
@@ -223,7 +223,7 @@
                     android:layout_marginTop="16dp"
                     android:background="@drawable/rounded_corner_blue"
                     android:textColor="@android:color/white"
-                    tools:text="Check in" />
+                    android:text="Check in" />
 
 
             </LinearLayout>

@@ -7,26 +7,27 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
+import java.util.List;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import ng.hotels.android.app.R;
-
 import ss.com.bannerslider.banners.Banner;
+import ss.com.bannerslider.banners.DrawableBanner;
 import ss.com.bannerslider.banners.RemoteBanner;
-import ss.com.bannerslider.events.OnBannerClickListener;
 import ss.com.bannerslider.views.BannerSlider;
-import ss.com.bannerslider.views.indicators.IndicatorShape;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class AddCardFragment extends Fragment {
 
+    @BindView(R.id.banner_slider_add_card)
+    BannerSlider bannerSlider;
 
     public AddCardFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -34,15 +35,15 @@ public class AddCardFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_add_card, container, false);
         ButterKnife.bind(this,view);
-        Banne bannerSlider = (BannerSlider) findViewById(R.id.banner_slider1);
-        List<Banner> banners=new ArrayList<>();
-        //add banner using image url
-        banners.add(new RemoteBanner("Put banner image url here ..."));
-        //add banner using resource drawable
-        banners.add(new DrawableBanner(R.drawable.yourDrawable));
-        bannerSlider.setBanners(banners);
-
+        setupSlider();
         return view;
+    }
+
+    private void setupSlider() {
+        List<Banner> banners=new ArrayList<>();
+        banners.add(new DrawableBanner(R.drawable.aeroplane));
+        banners.add(new DrawableBanner(R.drawable.arik_logo));
+        bannerSlider.setBanners(banners);
     }
 
 }
