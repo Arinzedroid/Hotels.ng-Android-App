@@ -1,4 +1,4 @@
-package ng.hotels.android.app.ui;
+package ng.hotels.android.app.ui.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

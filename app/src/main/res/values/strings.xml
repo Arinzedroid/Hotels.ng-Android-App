@@ -65,5 +65,9 @@
     <string name="dummy_price">₦ 84,000</string>
     <string name="dummy_incl">All inclusive</string>
     <string name="dummy_email">johndoe@example.com</string>
+    <string name="check_out">Check out</string>
+    <string name="your_info">Your Info</string>
+    <string name="payment_options">Payment Options</string>
+    <string name="confirm_booking">Confirm booking</string>
 
 </resources>
