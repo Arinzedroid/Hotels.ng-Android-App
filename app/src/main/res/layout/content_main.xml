@@ -6,81 +6,101 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="ng.hotels.android.app.ui.activities.MainActivity"
-    tools:showIn="@layout/activity_main">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103"
-        android:id="@+id/textView13" />
+    tools:showIn="@layout/activity_main"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
 
     <Button
-        android:onClick="openHompage"
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:onClick="openHompage"
         android:text="Home Page"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        tools:layout_editor_absoluteY="77dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginRight="24dp" />
 
     <Button
-        android:onClick="openLoginpage"
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="openLoginpage"
         android:text="Login page"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginRight="24dp"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
-        android:onClick="openSingleHotel"
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:onClick="openSingleHotel"
         android:text="SingleHotel"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginRight="24dp"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
-        android:onClick="openPaymentSuccess"
         android:id="@+id/button6"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:onClick="openPaymentSuccess"
         android:text="Payment success"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginRight="24dp"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
     <Button
-        android:onClick="openFlightDetails"
         android:id="@+id/button7"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:onClick="openFlightDetails"
         android:text="FlightDetails"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:onClick="openBookingDetails"
+        android:text="Booking Details Page"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
 
 </android.support.constraint.ConstraintLayout>
