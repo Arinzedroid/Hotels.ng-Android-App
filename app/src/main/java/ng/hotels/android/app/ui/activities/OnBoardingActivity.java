@@ -23,7 +23,7 @@ import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
 import dagger.android.support.HasSupportFragmentInjector;
 import ng.hotels.android.app.R;
-import ng.hotels.android.app.ui.adapters.OnBoardingPagerAdapter;
+import ng.hotels.android.app.adapters.OnBoardingPagerAdapter;
 import ng.hotels.android.app.utils.PreferenceUtils;
 
 /**
@@ -94,18 +94,7 @@ public class OnBoardingActivity extends AppCompatActivity implements HasSupportF
             public void onPageSelected(int position) {
                 page = position;
                 updateIndicators(page);
-                switch (position) {
-                    case 0:
-                        mViewPager.setBackgroundColor(color1);
-                        break;
-                    case 1:
-                        mViewPager.setBackgroundColor(color2);
-                        break;
-                    case 2:
-                        mViewPager.setBackgroundColor(color3);
-                        break;
-                }
-
+                mViewPager.setBackgroundColor(color1);
                 mSkipBtn.setVisibility(position == 2 ? View.GONE : View.VISIBLE);
                 mFinishBtn.setVisibility(position == 2 ? View.VISIBLE : View.GONE);
 

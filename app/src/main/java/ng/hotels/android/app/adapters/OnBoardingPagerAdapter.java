@@ -1,4 +1,4 @@
-package ng.hotels.android.app.ui.adapters;
+package ng.hotels.android.app.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

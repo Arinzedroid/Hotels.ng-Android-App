@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hotels.NG Android App</string>
+    <string name="app_name">Hotels.ng</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_home">hotels.ng</string>
     <string name="title_home">Home</string>
@@ -33,7 +33,7 @@
     <string name="light">Light</string>
     <string name="bar_lounge">Bar/Lounge</string>
     <string name="dstv">DSTV</string>
-    <string name="title_activity_onboarding">OnboardingActivity</string>
+    <string name="title_activity_on_boarding">OnBoardingActivity</string>
     <string name="section_format">Page %1$d</string>
     <string name="finish">Finish</string>
     <string name="skip">Skip</string>
@@ -42,5 +42,7 @@
     <string name="better_prices">Better prices</string>
     <string name="hotels_for_you">Hotels for You</string>
     <string name="feature_place">Featured Places</string>
+    <string name="hotels_ng">hotels.ng</string>
+    <string name="enter_card">Enter card</string>
 
 </resources>
