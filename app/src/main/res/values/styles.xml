@@ -26,4 +26,16 @@
         <item name="fontPath">fonts/Lato-Black.ttf</item>
     </style>
 
+    <style name="booking_details_heading">
+
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:textColor">
+            #3D9EE3
+        </item>
+
+    </style>
+
 </resources>
