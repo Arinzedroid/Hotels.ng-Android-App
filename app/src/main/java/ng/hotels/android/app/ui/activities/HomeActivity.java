@@ -16,6 +16,7 @@ import ng.hotels.android.app.adapters.BottomBarAdapter;
 import ng.hotels.android.app.adapters.NoSwipePager;
 import ng.hotels.android.app.ui.fragments.HotelsFragments;
 import ng.hotels.android.app.ui.fragments.SearchFlightFragment;
+import ng.hotels.android.app.ui.fragments.WishListFragment;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class HomeActivity extends AppCompatActivity {
@@ -46,8 +47,12 @@ public class HomeActivity extends AppCompatActivity {
                     mTextMessage.setText(R.string.title_dashboard);
                     break;
                 case R.id.navigation_wishlist:
+                    selectedFragment = new WishListFragment();
+
 
                 break;
+
+                default:
             }
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             transaction.replace(R.id.frame_layout, selectedFragment);
