@@ -3,6 +3,8 @@ package ng.hotels.android.app;
 import android.app.Activity;
 import android.app.Application;
 
+import com.facebook.FacebookSdk;
+
 import javax.inject.Inject;
 
 import dagger.android.DispatchingAndroidInjector;
@@ -21,6 +23,9 @@ public class AppController extends Application implements HasActivityInjector {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        FacebookSdk.setApplicationId("hejfbdgfbpudfbhgdbpfuygdBIUFgbp");
+        FacebookSdk.sdkInitialize(this);
 
         //initialized default font
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()

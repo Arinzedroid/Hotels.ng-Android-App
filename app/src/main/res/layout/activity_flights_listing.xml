@@ -30,7 +30,7 @@
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                     android:textColor="@android:color/white"
                     android:textSize="50sp"
-                    tools:text="LOS" />
+                    android:text="LOS" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
                     android:layout_gravity="center"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                     android:textColor="@android:color/white"
-                    tools:text="Lagos" />
+                    android:text="Lagos" />
 
             </LinearLayout>
 
@@ -63,7 +63,7 @@
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                     android:textColor="@android:color/white"
                     android:textSize="50sp"
-                    tools:text="QUO" />
+                    android:text="QUO" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -71,7 +71,7 @@
                     android:layout_gravity="center"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                     android:textColor="@android:color/white"
-                    tools:text="Uyo" />
+                    android:text="Uyo" />
 
             </LinearLayout>
 

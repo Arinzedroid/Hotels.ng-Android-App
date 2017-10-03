@@ -1,6 +1,5 @@
 package ng.hotels.android.app.ui.fragments;
 
-
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -14,50 +13,52 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 import ng.hotels.android.app.R;
-
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class LoginFragment extends Fragment implements View.OnClickListener{
+public class SignUpFragment extends Fragment implements View.OnClickListener{
 
     @BindView(R.id.email_address)
     EditText emailView;
+
     @BindView(R.id.password)
     EditText passwordView;
-    @BindView(R.id.sign_in_button)
-    Button signIn;
-    @BindView(R.id.text_sign_up)
-    TextView signUpView;
+
+    @BindView(R.id.confirm_password)
+    EditText confirmPasswordView;
+
+    @BindView(R.id.sign_up_button)
+    Button signUpButton;
+
+    @BindView(R.id.text_login)
+    TextView loginView;
 
     private OnFragmentInteractionListener mListener;
 
-    public static LoginFragment newInstance() {
-        LoginFragment fragment = new LoginFragment();
+    public static SignUpFragment newInstance(){
+        SignUpFragment fragment = new SignUpFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
     }
 
-    public LoginFragment() {
-
+    public SignUpFragment() {
+        // Required empty public constructor
     }
 
-    //TODO: Implement the logic for social media logins
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_login, container, false);
+        View view = inflater.inflate(R.layout.fragment_signup, container, false);
         ButterKnife.bind(this, view);
-        setupViews();
+        setUpViews();
 
         emailView.addTextChangedListener(new TextWatcher() {
             @Override
@@ -74,7 +75,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
                 } else {
                     emailView.setError(null);
                 }
-                showSignInButton();
+                showSignUpButton();
             }
 
             @Override
@@ -98,7 +99,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
                 } else {
                     passwordView.setError(null);
                 }
-                showSignInButton();
+                showSignUpButton();
             }
 
             @Override
@@ -106,30 +107,59 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
 
             }
         });
-        signIn.setOnClickListener(this);
-        signUpView.setOnClickListener(this);
-        showSignInButton();
+
+        confirmPasswordView.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int i, int i1, int i2) {
+                if (!s.toString().equals(passwordView.getText().toString())){
+                    confirmPasswordView.setError("Passwords do not match");
+                } else if (TextUtils.isEmpty(s)){
+                    confirmPasswordView.setError("This field cannot be empty");
+                } else {
+                    confirmPasswordView.setError(null);
+                }
+                showSignUpButton();
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+        signUpButton.setOnClickListener(this);
+        loginView.setOnClickListener(this);
+        showSignUpButton();
         return view;
     }
 
-    private void setupViews() {
+    private void setUpViews() {
         emailView.setText("");
         passwordView.setText("");
+        confirmPasswordView.setText("");
     }
 
-    private void showSignInButton() {
+    private void showSignUpButton(){
         if (Patterns.EMAIL_ADDRESS.matcher(emailView.getText().toString()).matches() &&
-                passwordView.getText().toString().matches("^(?=.*\\d).{6}$")) {
-            signIn.setVisibility(View.VISIBLE);
+                passwordView.getText().toString().matches("^(?=.*\\d).{6}$") &&
+                confirmPasswordView.getText().toString().equals(passwordView.getText().toString())) {
+
+            signUpButton.setVisibility(View.VISIBLE);
         } else {
-            signIn.setVisibility(View.GONE);
+            signUpButton.setVisibility(View.GONE);
         }
     }
+
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener){
+
+        if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
         } else {
             throw new RuntimeException(context.toString()
@@ -137,36 +167,31 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
         }
     }
 
-
-    @OnClick(R.id.text_forgot_password)
-    public void clickForgotPassword() {
-        Toast.makeText(getActivity(), "Yet to be implemented", Toast.LENGTH_SHORT).show();
-    }
-
-    @OnClick(R.id.text_sign_up)
-    public void openSignUpFragment() {
-        getActivity().getSupportFragmentManager().beginTransaction()
-                .replace(R.id.frame_user_authentication, new SignUpFragment())
-                .commit();
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mListener = null;
     }
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.sign_in_button:
+        switch (view.getId()){
+            case R.id.sign_up_button:
                 String email = emailView.getText().toString();
                 String password = passwordView.getText().toString();
-                mListener.onLoginClicked(email, password);
+                String confirm_password = confirmPasswordView.getText().toString();
+                mListener.onSignUpClicked(email, password, confirm_password);
                 break;
-            case R.id.text_sign_up:
-                mListener.onSignUpClicked();
+            case R.id.text_login:
+                mListener.onSignInClicked();
                 break;
         }
     }
 
     public interface OnFragmentInteractionListener{
-        void onLoginClicked(String email, String password);
-        void onSignUpClicked();
+        void onSignInClicked();
+        void onSignUpClicked(String email, String password, String confirm_password);
+        void onBackPressed();
     }
-}
 
+}

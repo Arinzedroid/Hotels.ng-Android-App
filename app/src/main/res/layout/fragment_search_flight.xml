@@ -1,354 +1,360 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ng.hotels.android.app.ui.fragments.SearchFlightFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <LinearLayout
+        android:id="@+id/layer2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
         android:orientation="vertical"
-        tools:context="ng.hotels.android.app.ui.fragments.SearchFlightFragment">
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp"
+                    android:text="LOS" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/white"
+                    android:text="Lagos" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/icon_swap" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp"
+                    android:text="QUO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/white"
+                    android:text="Uyo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@color/colorPrimary"
-            android:orientation="vertical"
-            android:padding="20dp">
+            android:layout_marginTop="20dp"
+            android:gravity="center">
 
-            <LinearLayout
+            <Button
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
+                android:layout_height="35dp"
+                android:background="@drawable/rounded_corner_white"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Round trip" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                        android:textColor="@android:color/white"
-                        android:textSize="50sp"
-                        tools:text="LOS" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                        android:textColor="@android:color/white"
-                        tools:text="Lagos" />
-
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginStart="20dp"
-                    android:src="@drawable/icon_swap" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginStart="20dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                        android:textColor="@android:color/white"
-                        android:textSize="50sp"
-                        tools:text="QUO" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                        android:textColor="@android:color/white"
-                        tools:text="Uyo" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:gravity="center">
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:background="@drawable/rounded_corner_white"
-                    android:padding="10dp"
-                    android:textColor="@color/colorPrimary"
-                    tools:text="Round trip" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/rounded_corner_blue"
-                    android:padding="10dp"
-                    android:textColor="@android:color/white"
-                    tools:text="One way" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="25dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/white"
-                        tools:text="DEPARTURE" />
-
-                    <android.support.v7.widget.AppCompatEditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:minEms="7"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                        android:textColor="@android:color/white"
-                        app:backgroundTint="@android:color/white"
-                        tools:text="Sat. 6th Sept" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@android:color/white"
-                        tools:text="RETURN" />
-
-                    <android.support.v7.widget.AppCompatEditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:minEms="7"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                        android:textColor="@android:color/white"
-                        app:backgroundTint="@android:color/white"
-                        tools:text="Sun. 16th Sept" />
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="30dp"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/rounded_corner_blue"
+                android:padding="10dp"
                 android:textColor="@android:color/white"
-                tools:text="PASSENGERS" />
-
-            <android.support.v7.widget.AppCompatEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                android:textColor="@android:color/white"
-                app:backgroundTint="@android:color/white"
-                tools:text="2 Adults" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="24dp"
-                android:textColor="@android:color/white"
-                tools:text="CABIN CLASS" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:gravity="center">
-
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:background="@drawable/rounded_corner_white"
-                    android:padding="5dp"
-                    android:textColor="@color/colorPrimary"
-                    tools:text="Economy" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginStart="5dp"
-                    android:background="@drawable/rounded_corner_blue"
-                    android:padding="10dp"
-                    android:textColor="@android:color/white"
-                    tools:text="Prem.Economy" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginStart="5dp"
-                    android:background="@drawable/rounded_corner_blue"
-                    android:padding="10dp"
-                    android:textColor="@android:color/white"
-                    tools:text="Buisness" />
-
-
-            </LinearLayout>
-
+                android:text="One way" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:orientation="vertical">
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:elevation="4dp">
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="DEPARTURE" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="5dp"
-                        android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minEms="7"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="@android:color/white"
+                    android:text="Sat. 6th Sept" />
 
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/dana_air" />
+            </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="15dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                style="@style/Base.TextAppearance.AppCompat.Large"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                tools:text="11:00-12:00" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                tools:text="LOS-QUO Dana Air" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
 
 
-                        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="RETURN" />
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minEms="7"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="@android:color/white"
+                    android:text="Sun. 16th Sept" />
 
-                            <TextView
-                                style="@style/Base.TextAppearance.AppCompat.Small"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="@android:color/black"
-                                tools:text="1hr 00min" />
+            </LinearLayout>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="right"
-                                tools:text="Direct" />
-
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#A6A9A9" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:layout_marginTop="10dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            tools:text="Total: " />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/colorAccent"
-                            tools:text="N42,000" />
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
 
         </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/white"
+            android:text="PASSENGERS" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@android:color/white"
+            android:text="2 Adults" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@android:color/white"
+            android:text="CABIN CLASS" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/rounded_corner_white"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Economy" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rounded_corner_blue"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:text="Prem.Economy" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rounded_corner_blue"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:text="Buisness" />
+
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
-</ScrollView>
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/layer2"
+        android:id="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/flight_icon"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/dana_air" />
+
+
+
+            <TextView
+
+                android:id="@+id/flight_time"
+                android:layout_toRightOf="@+id/flight_icon"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:00-12:00" />
+
+            <TextView
+                android:layout_below="@+id/flight_time"
+                android:layout_toRightOf="@+id/flight_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOS-QUO Dana Air" />
+
+
+            <View
+
+                android:layout_below="@+id/flight_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+
+            <TextView
+                android:id="@+id/flight_duration"
+                android:layout_alignParentRight="true"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="1hr 00min" />
+
+            <TextView
+                android:layout_below="@+id/flight_duration"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Direct" />
+            <View
+                android:id="@+id/divider"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/flight_icon"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#A6A9A9" />
+
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+
+                android:layout_toLeftOf="@+id/total"
+                android:layout_below="@+id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total: " />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/total"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="N42,000" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+
