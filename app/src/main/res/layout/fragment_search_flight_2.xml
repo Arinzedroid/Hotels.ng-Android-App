@@ -1,383 +1,419 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:fitsSystemWindows="true">
 
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:background="@color/colorPrimaryDark"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textColor="@android:color/white"
-            android:textSize="40sp"
-            tools:text="hotels.ng" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textColor="@android:color/white"
-            android:textSize="15sp"
-            tools:text="We can book you across hotels in Nigeria" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_weight="1">
-
-            <LinearLayout
+            <TextView
+                fontPath="fonts/Lato-Bold.ttf"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="25dp">
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                tools:ignore="MissingPrefix"
+                android:text="@string/hotels_ng" />
 
-                <ImageView
-                    android:tint="#c4c4c4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/ic_flight_black" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    tools:text="Departure City" />
-
-                <ImageView
-                    android:tint="#c4c4c4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/ic_arrow_drop_down_circle_black" />
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_weight="1">
-
-            <LinearLayout
+            <TextView
+                fontPath="fonts/Lato-Regular.ttf"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="25dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:tint="#c4c4c4"
-                    android:src="@drawable/ic_flight_black" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    tools:text="Arrival City" />
-
-                <ImageView
-                    android:tint="#c4c4c4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/ic_arrow_drop_down_circle_black" />
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-    </LinearLayout>
-
-    <!--For some other thing-->
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_weight="1">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="25dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"/>
-
-                <LinearLayout
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        tools:text="One way" />
-
-                    <TextView
-                        android:textColor="@android:color/black"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        tools:text="20 Sept 2019" />
-
-                </LinearLayout>
-
-
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:tint="#c4c4c4"
-                    android:src="@drawable/ic_arrow_drop_down_circle_black" />
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_weight="1">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="25dp">
-
-                <ImageView
-                    android:tint="#c4c4c4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp" />
-
-                <TextView
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    tools:text="Departure date" />
-
-                <ImageView
-                    android:tint="#c4c4c4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/ic_arrow_drop_down_circle_black"/>
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-    </LinearLayout>
-
-    <!--For Adult-->
-
-    <LinearLayout
-        android:baselineAligned="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="Adult" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="1" />
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="MissingPrefix"
+                tools:text="We can book you across hotels in Nigeria" />
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginRight="20dp"
-            android:layout_weight="0.5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:gravity="right">
-
-            <Button
-                android:background="@drawable/ic_remove_circle_outline_black"
-                android:layout_width="30dp"
-                android:layout_height="30dp" />
-
-            <Button
-                android:tint="#c4c4c4"
-                android:background="@drawable/ic_add_circle_outline_black"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginRight="10dp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-    <!--For children-->
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="Children" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="2" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginRight="20dp"
-            android:layout_weight="0.5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:gravity="right">
-
-            <Button
-                android:background="@drawable/ic_remove_circle_outline_black"
-                android:layout_width="30dp"
-                android:layout_height="30dp" />
-
-            <Button
-                android:background="@drawable/ic_add_circle_outline_black"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginRight="10dp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <android.support.v7.widget.CardView xmlns:cardView="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        cardView:cardElevation="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:tint="@color/tint"
+                        app:srcCompat="@drawable/ic_flight_black" />
+
+                    <TextView
+                        fontPath="fonts/Lato-Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        tools:ignore="MissingPrefix"
+                        tools:text="Departure City" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:tint="#c4c4c4"
+                        app:srcCompat="@drawable/ic_arrow_drop_down_circle_black" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:tint="#c4c4c4"
+                        app:srcCompat="@drawable/ic_flight_black" />
+
+                    <TextView
+                        fontPath="fonts/Lato-Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        tools:ignore="MissingPrefix"
+                        tools:text="Arrival City" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:tint="#c4c4c4"
+                        app:srcCompat="@drawable/ic_arrow_drop_down_circle_black" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <!--For some other thing-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            fontPath="fonts/Lato-Regular.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="MissingPrefix"
+                            tools:text="One way" />
+
+                        <TextView
+                            fontPath="fonts/Lato-Regular.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            tools:ignore="MissingPrefix"
+                            tools:text="20 Sept 2019" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="#c4c4c4"
+                        app:srcCompat="@drawable/ic_arrow_drop_down_circle_black" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_calendar"
+                        android:tint="#c4c4c4" />
+
+                    <TextView
+                        fontPath="fonts/Lato-Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        tools:ignore="MissingPrefix"
+                        tools:text="Departure date" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:tint="#c4c4c4"
+                        app:srcCompat="@drawable/ic_arrow_drop_down_circle_black" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <!--For Adult-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="center"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:src="@drawable/dana_airline" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Adult" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.5"
+                android:gravity="right">
+
+                <Button
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_remove_circle_outline_black"
+                    android:backgroundTint="#c4c4c4" />
+
+                <Button
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_add_circle_outline_black"
+                    android:backgroundTint="#c4c4c4"
+                    android:tint="#c4c4c4" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--For children-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/black"
+                    fontPath="fonts/Lato-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="MissingPrefix"
+                    tools:text="Children" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fontPath="fonts/Lato-Regular.ttf"
+                    tools:text="2"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.5"
+                android:gravity="right">
+
+                <Button
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_remove_circle_outline_black"
+                    android:backgroundTint="#c4c4c4" />
+
+                <Button
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_add_circle_outline_black"
+                    android:backgroundTint="#c4c4c4" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView xmlns:cardView="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            cardView:cardElevation="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                    android:textColor="@android:color/black"
-                    tools:text="Dana Air" />
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/dana_airline" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                    tools:text="394 Murtala Mohammed Way, Lagos" />
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
 
-                <android.support.v7.widget.AppCompatRatingBar
-                    style="?android:attr/ratingBarStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:rating="4" />
+                    <TextView
+                        fontPath="fonts/Lato-Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@android:color/black"
+                        tools:ignore="MissingPrefix"
+                        tools:text="Dana Air" />
+
+                    <TextView
+                        fontPath="fonts/Lato-Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        tools:ignore="MissingPrefix"
+                        tools:text="394 Murtala Mohammed Way, Lagos" />
+
+                    <android.support.v7.widget.AppCompatRatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:rating="4" />
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
+        </android.support.v7.widget.CardView>
 
-        </LinearLayout>
+        <Button
+            fontPath="fonts/Lato-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            tools:ignore="MissingPrefix"
+            tools:text="Search for flight" />
 
-    </android.support.v7.widget.CardView>
+    </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:background="@color/colorPrimaryDark"
-        android:gravity="center"
-        android:padding="10dp"
-        android:textColor="@android:color/white"
-        tools:text="Search for flight" />
-
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

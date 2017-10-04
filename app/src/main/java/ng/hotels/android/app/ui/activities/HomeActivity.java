@@ -39,12 +39,10 @@ public class HomeActivity extends AppCompatActivity {
             Fragment selectedFragment = null;
             switch (item.getItemId()) {
                 case R.id.navigation_hotel:
-                    mTextMessage.setText("Hotel");
                     selectedFragment = new HotelsFragments();
                     break;
                 case R.id.navigation_flight:
                     selectedFragment = new SearchFlightFragment();
-                    mTextMessage.setText(R.string.title_dashboard);
                     break;
                 case R.id.navigation_wishlist:
                     selectedFragment = new WishListFragment();

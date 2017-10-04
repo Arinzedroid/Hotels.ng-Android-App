@@ -8,8 +8,13 @@
     <color name="colorHint">#E1E1E1</color>
     <color name="indicator_unselected">#4D000000</color>
     <color name="white">#ffff</color>
+    <color name="tint">#c4c4c4</color>
     <color name="textLight">#828282</color>
     <color name="textDark">#202020</color>
+    <color name="check_out_default">#fff</color>
+    <color name="check_out_blue">#3d9ee3</color>
+    <color name="check_out_grey">#ececec</color>
+    <color name="text_color">#000</color>
 
 
 </resources>

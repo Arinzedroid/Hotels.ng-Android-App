@@ -14,7 +14,7 @@
             android:layout_height="192dp"
             android:layout_gravity="center"
             android:adjustViewBounds="true"
-            android:alpha="0.30"
+            android:alpha="1"
             android:background="@drawable/ic_flight_black"
             android:scaleType="fitCenter" />
 

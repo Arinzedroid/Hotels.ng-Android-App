@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hotels.NG Android App</string>
+    <string name="app_name">Hotels.ng</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_home">hotels.ng</string>
     <string name="title_home">Home</string>
@@ -24,6 +24,11 @@
     <string name="password">Password</string>
     <string name="forgot_password">forgot password?</string>
 
+    <string name="checkout_name">Full Name</string>
+    <string name="checkout_phone">Phone</string>
+    <string name="checkout_email">Email Address</string>
+    <string name="checkout_button">Proceed</string>
+
     <string name="facebook_app_id"></string>
     <string name="fb_login_protocol_scheme"></string>
     <string name="already_have_an_account">Already have an account?</string>
@@ -33,7 +38,7 @@
     <string name="light">Light</string>
     <string name="bar_lounge">Bar/Lounge</string>
     <string name="dstv">DSTV</string>
-    <string name="title_activity_onboarding">OnboardingActivity</string>
+    <string name="title_activity_on_boarding">OnBoardingActivity</string>
     <string name="section_format">Page %1$d</string>
     <string name="finish">Finish</string>
     <string name="skip">Skip</string>
@@ -43,6 +48,9 @@
     <string name="confirm_password">Confirm password</string>
     <string name="hotels_for_you">Hotels for You</string>
     <string name="feature_place">Featured Places</string>
+
+    <string name="hotels_ng">hotels.ng</string>
+    <string name="enter_card">Enter card</string>
     <string name="contact_details">Contact Details</string>
     <string name="reservation_confirmation">Reservation Confirmation</string>
     <string name="payment_summary">Payment Summary</string>
@@ -69,5 +77,15 @@
     <string name="your_info">Your Info</string>
     <string name="payment_options">Payment Options</string>
     <string name="confirm_booking">Confirm booking</string>
+    <string name="save">Save</string>
+    <string name="choose_card_type">Choose card type</string>
+    <string name="dummy_hotel_desc">Swiss International Mabisel is at No. 9, Mabisel Avenue Off Peter Odili in Port Harcourt, Rivers State.‎ This hotel combines beautiful designs and luxury accommodations to create an inviting ambience for guests to enjoy. It features free Wi-Fi and an outdoor swimming pool fitted with loungers.</string>
+    <string name="rooms_categories">Room categories</string>
+    <string name="superior_room">Superior Room</string>
+    <string name="deluxe_room">Deluxe Room</string>
+    <string name="free_wifi">Free Wifi</string>
+    <string name="per_night">PER NIGHT</string>
+    <string name="dummy_price2">₦ 34,800</string>
+    <string name="select_room">SELECT ROOM</string>
 
 </resources>
