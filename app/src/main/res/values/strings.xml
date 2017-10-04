@@ -29,8 +29,8 @@
     <string name="checkout_email">Email Address</string>
     <string name="checkout_button">Proceed</string>
 
-    <string name="facebook_app_id"></string>
-    <string name="fb_login_protocol_scheme"></string>
+    <string name="facebook_app_id">1204775476320820</string>
+    <string name="fb_login_protocol_scheme">fb1204775476320820</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="hotel_rating_wonderful">Wonderful</string>
     <string name="overall_guest_score">overall guest score</string>
@@ -56,6 +56,9 @@
     <string name="payment_summary">Payment Summary</string>
     <string name="view_hotel_details">View hotel details</string>
     <string name="price">Price</string>
+    <string name="atm">ATM</string>
+    <string name="bank_deposit">BANK DEPOSIT</string>
+    <string name="pay_at_the_hotel">PAY AT THE HOTEL</string>
     <string name="reserved_by">Reserved by</string>
     <string name="ref_num">Ref Number</string>
     <string name="check_in">Check in</string>
@@ -73,8 +76,6 @@
     <string name="dummy_price">₦ 84,000</string>
     <string name="dummy_incl">All inclusive</string>
     <string name="dummy_email">johndoe@example.com</string>
-    <string name="check_out">Check out</string>
-    <string name="your_info">Your Info</string>
     <string name="payment_options">Payment Options</string>
     <string name="confirm_booking">Confirm booking</string>
     <string name="save">Save</string>
@@ -87,5 +88,7 @@
     <string name="per_night">PER NIGHT</string>
     <string name="dummy_price2">₦ 34,800</string>
     <string name="select_room">SELECT ROOM</string>
+    <string name="your_info">Your Info</string>
+    <string name="check_out">Check out</string>
 
 </resources>

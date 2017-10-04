@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "941374624491",
+    "project_id": "hngandroidapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941374624491:android:474f10f7ce7a3732",
+        "android_client_info": {
+          "package_name": "ng.hotels.android.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941374624491-l22ic808ekb2n21gncg4b78q13lgqhgs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ng.hotels.android.app",
+            "certificate_hash": "f669b969f9de737a63f75075afe3f47d9492075f"
+          }
+        },
+        {
+          "client_id": "941374624491-qq4bl722lh9q2ec6831g00hni1dcof4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1R566A5dO6bJCYRp5Tx0pjJebwPHQdLY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

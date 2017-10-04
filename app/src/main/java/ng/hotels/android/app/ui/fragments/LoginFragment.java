@@ -91,7 +91,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
 
             @Override
             public void onTextChanged(CharSequence s, int i, int i1, int i2) {
-                if (!s.toString().matches("^(?=.*\\d).{6}$")) {
+                if (!s.toString().matches("^(?=.*\\d).{6,32}$")) {
                     passwordView.setError("Must have at least 1digit, and must be up to 6 characters");
                 } else if (TextUtils.isEmpty(s)) {
                     passwordView.setError("This field cannot be empty");
@@ -119,7 +119,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
 
     private void showSignInButton() {
         if (Patterns.EMAIL_ADDRESS.matcher(emailView.getText().toString()).matches() &&
-                passwordView.getText().toString().matches("^(?=.*\\d).{6}$")) {
+                passwordView.getText().toString().matches("^(?=.*\\d).{6,32}$")) {
             signIn.setVisibility(View.VISIBLE);
         } else {
             signIn.setVisibility(View.GONE);

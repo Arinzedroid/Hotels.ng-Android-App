@@ -1,13 +1,82 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ng.hotels.android.app.ui.fragments.YourInfoFragment">
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <Spinner
+        android:id="@+id/spinner_title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:spinnerMode="dropdown"
+        android:dropDownWidth="fill_parent"
+        android:background="@android:drawable/btn_dropdown" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_corner_grey_border"
+        android:ems="10"
+        android:padding="16dp"
+        android:inputType="textPersonName"
+        android:text="@string/checkout_name"
+        android:textColor="@color/textLight" />
+
+    <Spinner
+        android:id="@+id/spinner_country"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:spinnerMode="dropdown"
+        android:dropDownWidth="fill_parent"
+        android:background="@android:drawable/btn_dropdown" />
+
+    <EditText
+        android:id="@+id/editText_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_corner_grey_border"
+        android:ems="10"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:text="@string/checkout_phone"
+        android:textColor="@color/textLight" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_corner_grey_border"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:text="@string/checkout_email"
+        android:textColor="@color/textLight" />
+
+    <Button
+        android:id="@+id/proceed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:minHeight="16dp"
+        android:minWidth="16dp"
+        android:paddingBottom="16dp"
+        android:paddingEnd="100dp"
+        android:paddingStart="100dp"
+        android:paddingTop="16dp"
+        android:radius="10dp"
+        android:background="@drawable/rounded_corner_button_border"
+        android:text="@string/checkout_button"
+        android:textColor="@color/white" />
+
+</LinearLayout>

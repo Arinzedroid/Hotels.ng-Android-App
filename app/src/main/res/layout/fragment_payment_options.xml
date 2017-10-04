@@ -1,13 +1,75 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ng.hotels.android.app.ui.fragments.PaymentOptionsFragment">
+    android:orientation="vertical"
+    tools:context=".ui.fragments.PaymentOptionsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/payment_options"
+        android:textColor="@android:color/black"/>
 
-</FrameLayout>
+    <Button
+        android:id="@+id/atm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/header_text"
+        android:minHeight="16dp"
+        android:paddingBottom="16dp"
+        android:layout_margin="5dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="78dp"
+        android:paddingStart="78dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/rounded_corner_blue_border"
+        android:text="@string/atm"/>
+
+    <Button
+        android:id="@+id/bank_deposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="16dp"
+        android:layout_below="@+id/atm"
+        android:layout_centerHorizontal="true"
+        android:minHeight="16dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="45dp"
+        android:paddingStart="45dp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_corner_button_border"
+        android:text="@string/bank_deposit"/>
+
+    <Button
+        android:id="@+id/pay_at_hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="16dp"
+        android:layout_below="@+id/bank_deposit"
+        android:layout_centerHorizontal="true"
+        android:minHeight="16dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_corner_button_border"
+        android:text="@string/pay_at_the_hotel"/>
+
+</RelativeLayout>

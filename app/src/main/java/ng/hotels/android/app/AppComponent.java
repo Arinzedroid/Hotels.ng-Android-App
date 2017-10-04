@@ -1,6 +1,6 @@
 package ng.hotels.android.app;
 
-import android.app.Application;
+import android.support.multidex.MultiDexApplication;
 
 import dagger.BindsInstance;
 import dagger.Component;
@@ -21,7 +21,7 @@ public interface AppComponent extends AndroidInjector<AppController> {
     @Component.Builder
     interface Builder {
         @BindsInstance
-        AppComponent.Builder application(Application application);
+        AppComponent.Builder application(MultiDexApplication application);
         AppComponent build();
     }
 

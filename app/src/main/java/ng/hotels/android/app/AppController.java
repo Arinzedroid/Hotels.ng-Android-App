@@ -2,6 +2,7 @@ package ng.hotels.android.app;
 
 import android.app.Activity;
 import android.app.Application;
+import android.support.multidex.MultiDexApplication;
 
 import com.facebook.FacebookSdk;
 
@@ -15,7 +16,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
  * Created by Nsikak on 9/27/17.
  */
 
-public class AppController extends Application implements HasActivityInjector {
+public class AppController extends MultiDexApplication implements HasActivityInjector {
 
     @Inject
     DispatchingAndroidInjector<Activity> activityDispatchingAndroidInjector;
