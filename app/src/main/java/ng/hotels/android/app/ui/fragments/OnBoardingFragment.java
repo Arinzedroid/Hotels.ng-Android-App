@@ -22,7 +22,7 @@ public class OnBoardingFragment extends Fragment {
     @BindView(R.id.text_detail_on_boarding)
     TextView onBoardingTextDetail;
 
-    int[] bgs = new int[]{R.drawable.ic_flight_black, R.drawable.ic_tv_black_24dp, R.drawable.ic_lightbulb_outline_black_24dp};
+    int[] bgs = new int[]{R.drawable.hotel_booking_onboarding, R.drawable.flight_on_boarding, R.drawable.better_prices_on_boarding};
 
     public OnBoardingFragment() {
         // Required empty public constructor

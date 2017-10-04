@@ -2,6 +2,7 @@ package ng.hotels.android.app.ui.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +15,6 @@ import butterknife.ButterKnife;
 import ng.hotels.android.app.R;
 import ss.com.bannerslider.banners.Banner;
 import ss.com.bannerslider.banners.DrawableBanner;
-import ss.com.bannerslider.banners.RemoteBanner;
 import ss.com.bannerslider.views.BannerSlider;
 
 /**
@@ -24,6 +24,9 @@ public class AddCardFragment extends Fragment {
 
     @BindView(R.id.banner_slider_add_card)
     BannerSlider bannerSlider;
+
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
 
     public AddCardFragment() {
         // Required empty public constructor
@@ -35,14 +38,15 @@ public class AddCardFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_add_card, container, false);
         ButterKnife.bind(this,view);
+        toolbar.setTitle("Enter Card");
         setupSlider();
         return view;
     }
 
     private void setupSlider() {
         List<Banner> banners=new ArrayList<>();
-        banners.add(new DrawableBanner(R.drawable.aeroplane));
-        banners.add(new DrawableBanner(R.drawable.arik_logo));
+        banners.add(new DrawableBanner(R.drawable.master_card));
+        banners.add(new DrawableBanner(R.drawable.master_card));
         bannerSlider.setBanners(banners);
     }
 

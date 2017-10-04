@@ -17,7 +17,7 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.AppBarOverlay.AddCardFragment" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
-        <item name="colorPrimary">#fff</item>
+        <item name="colorPrimary"></item>
         <item name="android:textColor">@color/colorPrimary</item>
 
     </style>

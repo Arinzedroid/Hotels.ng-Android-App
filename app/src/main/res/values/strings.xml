@@ -72,5 +72,7 @@
     <string name="your_info">Your Info</string>
     <string name="payment_options">Payment Options</string>
     <string name="confirm_booking">Confirm booking</string>
+    <string name="save">Save</string>
+    <string name="choose_card_type">Choose card type</string>
 
 </resources>

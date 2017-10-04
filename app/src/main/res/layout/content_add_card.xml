@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            fontPath="fonts/Lato-Regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:id="@+id/text_choose_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/choose_card_type"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <ss.com.bannerslider.views.BannerSlider
+            android:layout_marginTop="15dp"
+            android:id="@+id/banner_slider_add_card"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_below="@+id/text_choose_card" />
+
+        <android.support.v7.widget.AppCompatEditText
+            fontPath="fonts/Lato-Regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edit_text_card_holder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/banner_slider_add_card"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawableTint="@color/tint"
+            android:hint="Card holder name"
+            android:padding="5dp" />
+
+        <EditText
+            fontPath="fonts/Lato-Regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:id="@+id/edit_text_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_text_card_holder"
+            android:drawableLeft="@drawable/ic_call_to_action_black_24dp"
+            android:drawableTint="@color/tint"
+            android:hint=" Card number" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_cvc_exp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_text_card_number"
+            android:orientation="horizontal">
+
+            <EditText
+                fontPath="fonts/Lato-Regular.ttf"
+                tools:ignore="MissingPrefix"
+                android:id="@+id/cvc_number_add_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_security_black_24dp"
+                android:drawableTint="@color/tint"
+                android:hint=" CVC number" />
+
+            <EditText
+                fontPath="fonts/Lato-Regular.ttf"
+                tools:ignore="MissingPrefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:hint=" Exp. date"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <Button
+            fontPath="fonts/Lato-Regular.ttf"
+            tools:ignore="MissingPrefix"
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_layout_cvc_exp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:text="@string/save"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</ScrollView>

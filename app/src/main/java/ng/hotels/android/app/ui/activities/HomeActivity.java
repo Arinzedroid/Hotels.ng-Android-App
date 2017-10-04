@@ -14,6 +14,7 @@ import android.widget.TextView;
 import ng.hotels.android.app.R;
 import ng.hotels.android.app.adapters.BottomBarAdapter;
 import ng.hotels.android.app.adapters.NoSwipePager;
+import ng.hotels.android.app.ui.fragments.AddCardFragment;
 import ng.hotels.android.app.ui.fragments.HotelsFragments;
 import ng.hotels.android.app.ui.fragments.SearchFlightFragment;
 import ng.hotels.android.app.ui.fragments.WishListFragment;
@@ -39,12 +40,10 @@ public class HomeActivity extends AppCompatActivity {
             Fragment selectedFragment = null;
             switch (item.getItemId()) {
                 case R.id.navigation_hotel:
-                    mTextMessage.setText("Hotel");
                     selectedFragment = new HotelsFragments();
                     break;
                 case R.id.navigation_flight:
                     selectedFragment = new SearchFlightFragment();
-                    mTextMessage.setText(R.string.title_dashboard);
                     break;
                 case R.id.navigation_wishlist:
                     selectedFragment = new WishListFragment();

@@ -15,14 +15,14 @@
     <TextView
         android:id="@+id/place_name"
         fontPath="fonts/Lato-Regular.ttf"
+        tools:ignore="MissingPrefix"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ibom Tropicana"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        tools:ignore="MissingPrefix" />
+        android:layout_marginTop="10dp" />
     <TextView
         android:id="@+id/place_descr"
         fontPath="fonts/Lato-Regular.ttf"
