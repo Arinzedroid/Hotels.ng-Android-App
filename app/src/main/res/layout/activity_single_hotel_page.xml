@@ -10,13 +10,11 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/top_back"
             android:id="@+id/imageView2"
             android:layout_width="0dp"
             android:layout_height="333dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -52,11 +50,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="71dp"
             android:layout_marginStart="71dp"
-            android:text="TextView"
             android:textSize="11sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            tools:text="@string/overall_guest_score" />
+           android:text="@string/overall_guest_score" />
 
         <TextView
             android:id="@+id/textView3"
@@ -65,13 +62,12 @@
             android:layout_marginLeft="1dp"
             android:layout_marginStart="1dp"
             android:layout_marginTop="20dp"
-            android:text="TextView"
             android:textAppearance="@android:style/TextAppearance.Material.Headline"
             app:layout_constraintHorizontal_bias="0.06"
             app:layout_constraintLeft_toRightOf="@+id/textView"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            tools:text="9.8" />
+            android:text="9.8" />
 
         <RatingBar
             android:id="@+id/ratingBar"
@@ -147,36 +143,33 @@
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="6dp"
             android:layout_marginStart="6dp"
-            android:text="TextView"
             android:textColor="#4F4F4F"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="@+id/view2"
             app:layout_constraintLeft_toLeftOf="@+id/imageView4"
-            tools:text="@string/light" />
+            android:text="@string/light" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="TextView"
             android:textColor="#4F4F4F"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="@+id/view2"
             app:layout_constraintLeft_toLeftOf="@+id/imageView3"
-            tools:text="@string/wifi" />
+            android:text="@string/wifi" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="TextView"
             android:textColor="#4F4F4F"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="@+id/view2"
             app:layout_constraintLeft_toLeftOf="@+id/imageView5"
-            tools:text="@string/bar_lounge" />
+            android:text="@string/bar_lounge" />
 
         <TextView
             android:id="@+id/textView8"
@@ -185,12 +178,11 @@
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
-            android:text="TextView"
             android:textColor="#4F4F4F"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="@+id/view2"
             app:layout_constraintLeft_toLeftOf="@+id/imageView6"
-            tools:text="@string/dstv" />
+            android:text="@string/dstv" />
 
         <View
             android:id="@+id/view2"

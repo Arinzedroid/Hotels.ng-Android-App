@@ -3,6 +3,7 @@
     package="ng.hotels.android.app">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
         android:name=".AppController"
@@ -30,7 +31,10 @@
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activities.FlightsListingActivity" />
-        <activity android:name=".ui.activities.FlightDetailActivity" />
+        <activity
+            android:name=".ui.activities.FlightDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
         <activity android:name=".ui.activities.UserAuthenticationActivity" />
         <activity android:name=".ui.activities.SingleHotelPageActivity" />
         <activity
