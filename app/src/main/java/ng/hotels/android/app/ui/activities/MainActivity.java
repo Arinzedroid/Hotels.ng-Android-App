@@ -83,5 +83,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), FlightDetailActivity.class));
     }
 
+    public void openBookingDetails(View view) {
+        startActivity(new Intent(getApplicationContext(), BookingDetailsActivity.class));
+    }
+
 
 }

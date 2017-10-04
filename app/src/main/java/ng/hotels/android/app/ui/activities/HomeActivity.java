@@ -14,7 +14,6 @@ import android.widget.TextView;
 import ng.hotels.android.app.R;
 import ng.hotels.android.app.adapters.BottomBarAdapter;
 import ng.hotels.android.app.adapters.NoSwipePager;
-import ng.hotels.android.app.ui.fragments.AddCardFragment;
 import ng.hotels.android.app.ui.fragments.HotelsFragments;
 import ng.hotels.android.app.ui.fragments.SearchFlightFragment;
 import ng.hotels.android.app.ui.fragments.WishListFragment;
