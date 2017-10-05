@@ -12,7 +12,7 @@ Mobile application for Nigeria's biggest online hotel booking agency.
 - [Butterknife](https://github.com/JakeWharton/butterknife) for view bindings.
 
 # Contribution guide & Naming conventions
-- Solid knowledge of [git](https://try.github.io) is recommended
+- Solid knowledge of [GIT](https://try.github.io) and intermediate knowledge of Android is recommended
 - Please pull before you push
 - Classes start with capital letters and are written in camel case. Your class names should be descriptive.
 - All activity classes should end with Activity and fragment classes with Fragment.
