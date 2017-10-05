@@ -13,7 +13,7 @@ import java.util.TimerTask;
 
 import me.relex.circleindicator.CircleIndicator;
 import ng.hotels.android.app.R;
-import ng.hotels.android.app.ui.adapters.SingleHotelSlideAdapter;
+import ng.hotels.android.app.adapters.SingleHotelSlideAdapter;
 
 public class SingleHotelPageActivity extends AppCompatActivity {
 
