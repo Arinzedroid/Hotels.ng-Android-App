@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/check_out_default"
     android:orientation="vertical"
     android:padding="20dp">
 
@@ -27,7 +27,7 @@
         android:padding="16dp"
         android:inputType="textPersonName"
         android:text="@string/checkout_name"
-        android:textColor="@color/textLight" />
+        android:textColor="@color/text_color" />
 
     <Spinner
         android:id="@+id/spinner_country"
@@ -48,7 +48,7 @@
         android:inputType="phone"
         android:padding="16dp"
         android:text="@string/checkout_phone"
-        android:textColor="@color/textLight" />
+        android:textColor="@color/text_color" />
 
     <EditText
         android:id="@+id/editText_email"
@@ -60,7 +60,7 @@
         android:inputType="textEmailAddress"
         android:padding="16dp"
         android:text="@string/checkout_email"
-        android:textColor="@color/textLight" />
+        android:textColor="@color/text_color" />
 
     <Button
         android:id="@+id/proceed_button"
@@ -77,6 +77,6 @@
         android:radius="10dp"
         android:background="@drawable/rounded_corner_button_border"
         android:text="@string/checkout_button"
-        android:textColor="@color/white" />
+        android:textColor="@color/check_out_default" />
 
 </LinearLayout>
