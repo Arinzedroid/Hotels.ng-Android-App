@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context="ui.fragments.PendingPaymentReminderFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.fragments.PendingPaymentReminderFragment">
 
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -103,9 +103,6 @@ You have one pending payment on your booking page. How do you wish to proceed?" 
         </LinearLayout>
 
     </LinearLayout>
-
-
-
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
