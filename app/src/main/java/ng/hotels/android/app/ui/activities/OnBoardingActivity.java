@@ -4,7 +4,6 @@ import android.animation.ArgbEvaluator;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
@@ -48,8 +47,6 @@ public class OnBoardingActivity extends AppCompatActivity implements HasSupportF
     ImageView one;
     @BindView(R.id.image_indicator_2)
     ImageView two;
-    @BindView(R.id.coordinator_layout_on_boarding)
-    CoordinatorLayout mCoordinator;
     @BindView(R.id.view_pager_on_boarding)
     ViewPager mViewPager;
     private int page = 0; //  to track page position

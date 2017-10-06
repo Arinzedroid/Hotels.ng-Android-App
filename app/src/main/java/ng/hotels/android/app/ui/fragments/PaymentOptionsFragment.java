@@ -1,14 +1,18 @@
 package ng.hotels.android.app.ui.fragments;
 
+import android.app.Dialog;
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.Button;
 
 import ng.hotels.android.app.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -18,7 +22,7 @@ import ng.hotels.android.app.R;
  * Use the {@link PaymentOptionsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class PaymentOptionsFragment extends Fragment {
+public class PaymentOptionsFragment extends DialogFragment {
 
     private OnFragmentInteractionListener mListener;
 
@@ -31,7 +35,6 @@ public class PaymentOptionsFragment extends Fragment {
      * this fragment using the provided parameters.
      * @return A new instance of fragment PaymentOptionsFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static PaymentOptionsFragment newInstance() {
         PaymentOptionsFragment fragment = new PaymentOptionsFragment();
         Bundle args = new Bundle();
@@ -43,22 +46,51 @@ public class PaymentOptionsFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-
         }
     }
 
+    @NonNull
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_payment_options, container, false);
-    }
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        LayoutInflater inflater = getActivity().getLayoutInflater();
+        View root = inflater.inflate(R.layout.fragment_payment_options, null);
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
+        final Button atmButton = root.findViewById(R.id.atm);
+        final Button bankDeposit = root.findViewById(R.id.bank_deposit);
+        final Button payHotel = root.findViewById(R.id.pay_at_hotel);
+
+        builder.setView(root);
+        final AlertDialog dialog = builder.create();
+
+        atmButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String option = atmButton.getText().toString();
+                mListener.onOptionSelected(option);
+                dialog.dismiss();
+            }
+        });
+
+        bankDeposit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String option = bankDeposit.getText().toString();
+                mListener.onOptionSelected(option);
+                dialog.dismiss();
+            }
+        });
+
+        payHotel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String option = payHotel.getText().toString();
+                mListener.onOptionSelected(option);
+                dialog.dismiss();
+            }
+        });
+
+        return dialog;
     }
 
     @Override
@@ -89,7 +121,7 @@ public class PaymentOptionsFragment extends Fragment {
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
+
+        void onOptionSelected(String option);
     }
 }

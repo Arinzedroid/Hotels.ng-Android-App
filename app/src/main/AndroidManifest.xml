@@ -3,7 +3,7 @@
     package="ng.hotels.android.app">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:name=".AppController"
@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
 
         <meta-data android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>
@@ -30,6 +31,12 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+
         <activity
             android:name=".ui.activities.SplashActivity"
             android:theme="@style/SplashTheme">
@@ -42,6 +49,7 @@
         <activity
             android:name=".ui.activities.MainActivity"
             android:label="@string/app_name"
+
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
@@ -49,12 +57,11 @@
         <activity
             android:name=".ui.activities.HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activities.FlightsListingActivity" />
         <activity
             android:name=".ui.activities.FlightDetailActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activities.UserAuthenticationActivity" />
         <activity android:name=".ui.activities.SingleHotelPageActivity" />
         <activity
@@ -64,7 +71,19 @@
         <activity android:name=".ui.activities.BookingDetailsActivity" />
         <activity android:name=".ui.activities.SuccessfulBookingActivity" />
         <activity android:name=".ui.activities.BookingActivity" />
-        <activity android:name=".ui.activities.CardInfoActivity"></activity>
+        <activity android:name=".ui.activities.CardInfoActivity" />
+        <activity android:name=".ui.activities.InviteFriendsActivity" />
+        <activity android:name=".ui.activities.CustomerServiceStartConversationActivity" />
+        <activity
+            android:name=".ui.activities.CustomerServiceChatActivity"
+            android:label="@string/title_activity_customer_service_chat"
+            android:parentActivityName=".ui.activities.CustomerServiceStartConversationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ng.hotels.android.app.ui.activities.CustomerServiceStartConversationActivity" />
+        </activity>
+        <activity android:name=".ui.activities.BookingHistoryActivity"></activity>
+
     </application>
 
 </manifest>

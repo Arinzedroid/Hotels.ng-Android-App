@@ -1,5 +1,9 @@
 package ng.hotels.android.app.ui.activities;
 
+<<<<<<< HEAD
+=======
+import android.content.Intent;
+>>>>>>> 98ca8ef114f32c59b2a4915f51d8331941d8cf29
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -8,11 +12,20 @@ import android.widget.Toast;
 import ng.hotels.android.app.R;
 import ng.hotels.android.app.ui.fragments.LoginFragment;
 import ng.hotels.android.app.ui.fragments.SignUpFragment;
+<<<<<<< HEAD
 
 public class UserAuthenticationActivity extends AppCompatActivity implements
         LoginFragment.OnFragmentInteractionListener,
         SignUpFragment.OnFragmentInteractionListener{
 
+=======
+
+
+public class UserAuthenticationActivity extends AppCompatActivity implements
+        LoginFragment.OnFragmentInteractionListener,
+        SignUpFragment.OnFragmentInteractionListener{
+
+>>>>>>> 98ca8ef114f32c59b2a4915f51d8331941d8cf29
     private LoginFragment loginFragment;
     private SignUpFragment signUpFragment;
 
@@ -42,13 +55,26 @@ public class UserAuthenticationActivity extends AppCompatActivity implements
                 .commit();
     }
 
+<<<<<<< HEAD
+=======
+    private void showHomePage() {
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+>>>>>>> 98ca8ef114f32c59b2a4915f51d8331941d8cf29
     @Override
     public void onBackPressed() {
         if (signUpFragment.isAdded()) {
             loginFragment = null;
             showSignInFragment();
         } else {
+<<<<<<< HEAD
             showSignInFragment();
+=======
+            showHomePage();
+>>>>>>> 98ca8ef114f32c59b2a4915f51d8331941d8cf29
         }
     }
 
@@ -56,6 +82,10 @@ public class UserAuthenticationActivity extends AppCompatActivity implements
     public void onLoginClicked(String email, String password) {
         //TODO: Make API call to authenticate the user on the server
         Toast.makeText(this, "API call for login yet to be implemented", Toast.LENGTH_LONG).show();
+<<<<<<< HEAD
+=======
+        showHomePage();
+>>>>>>> 98ca8ef114f32c59b2a4915f51d8331941d8cf29
     }
 
 
@@ -75,5 +105,10 @@ public class UserAuthenticationActivity extends AppCompatActivity implements
     public void onSignUpClicked(String email, String password, String confirm_password) {
         //TODO: Make API call to pass the user details to the server
         Toast.makeText(this, "API call for sign up yet to be implemented", Toast.LENGTH_LONG).show();
+<<<<<<< HEAD
+=======
+        showHomePage();
+>>>>>>> 98ca8ef114f32c59b2a4915f51d8331941d8cf29
     }
 }
+

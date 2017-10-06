@@ -175,7 +175,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener, Goo
 
             @Override
             public void onTextChanged(CharSequence s, int i, int i1, int i2) {
-                if (!s.toString().matches("^(?=.*\\d).{6}$")) {
+                if (!s.toString().matches("^(?=.*\\d).{6,32}$")) {
                     passwordView.setError("Must have at least 1digit, and must be up to 6 characters");
                 } else if (TextUtils.isEmpty(s)) {
                     passwordView.setError("This field cannot be empty");
@@ -206,7 +206,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener, Goo
 
     private void showSignInButton() {
         if (Patterns.EMAIL_ADDRESS.matcher(emailView.getText().toString()).matches() &&
-                passwordView.getText().toString().matches("^(?=.*\\d).{6}$")) {
+                passwordView.getText().toString().matches("^(?=.*\\d).{6,32}$")) {
             signIn.setVisibility(View.VISIBLE);
         } else {
             signIn.setVisibility(View.GONE);
@@ -231,6 +231,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener, Goo
     }
 
     @Override
+<<<<<<< HEAD
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode, resultCode, data);
@@ -253,6 +254,11 @@ public class LoginFragment extends Fragment implements View.OnClickListener, Goo
             // Signed out, show unauthenticated UI.
             //updateUI(false);
         }
+=======
+    public void onDetach() {
+        super.onDetach();
+        mListener = null;
+>>>>>>> 98ca8ef114f32c59b2a4915f51d8331941d8cf29
     }
 
     @OnClick(R.id.text_forgot_password)

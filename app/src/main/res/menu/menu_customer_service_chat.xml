@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ng.hotels.android.app.ui.activities.MainActivity">
+
+    <item
+        android:id="@+id/action_call"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_call_black_24dp"
+        android:iconTint="@color/white"
+        android:title="@string/action_call"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+
+</menu>
