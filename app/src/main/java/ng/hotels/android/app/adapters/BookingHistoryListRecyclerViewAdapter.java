@@ -1,4 +1,4 @@
-package ng.hotels.android.app.ui.fragments;
+package ng.hotels.android.app.adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

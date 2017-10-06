@@ -9,7 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import ng.hotels.android.app.R;;
+import ng.hotels.android.app.R;
+import ng.hotels.android.app.adapters.BookingHistoryListRecyclerViewAdapter;;
 
 /**
  * A fragment representing a list of Items.
