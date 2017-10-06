@@ -10,8 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import ng.hotels.android.app.R;
-import ng.hotels.android.app.ui.fragments.dummy.DummyContent;
-import ng.hotels.android.app.ui.fragments.dummy.DummyContent.DummyItem;
+import ng.hotels.android.app.adapters.BookingHistoryListRecyclerViewAdapter;;
 
 /**
  * A fragment representing a list of Items.
@@ -58,7 +57,7 @@ public class BookingHistoryListFragment extends Fragment {
             Context context = view.getContext();
             RecyclerView recyclerView = (RecyclerView) view;
                 recyclerView.setLayoutManager(new LinearLayoutManager(context));
-            recyclerView.setAdapter(new BookingHistoryListRecyclerViewAdapter(DummyContent.ITEMS, mListener));
+            recyclerView.setAdapter(new BookingHistoryListRecyclerViewAdapter( mListener));
         }
         return view;
     }
@@ -92,6 +91,6 @@ public class BookingHistoryListFragment extends Fragment {
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnListFragmentInteractionListener {
-        void onListFragmentInteraction(DummyItem item);
+        void onListFragmentInteraction();
     }
 }

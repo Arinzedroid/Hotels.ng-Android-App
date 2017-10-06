@@ -24,7 +24,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="48dp"
                     android:layout_marginStart="48dp"
-                    android:text="Booking History"
+                    android:text="@string/booking_history"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="@color/white" />
             </RelativeLayout>
@@ -102,6 +102,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
+            app:cardCornerRadius="6dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="210dp"
             app:cardElevation="2dp">
