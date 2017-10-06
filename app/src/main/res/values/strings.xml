@@ -171,4 +171,21 @@
     <string name="title_name_loyalty">Loyalty Coins</string>
     <string name="booking">Uyo - Lagos</string>
 
+	<string name="app_name">MoCapture</string>
+    <string name="action_settings">Action Settings</string>
+    <string-array name="image_ids">
+        <item>@drawable/img1</item>
+        <item>@drawable/img2</item>
+        <item>@drawable/img3</item>
+        <item>@drawable/img4</item>
+        <item>@drawable/img5</item>
+        <item>@drawable/img6</item>
+        <item>@drawable/img7</item>
+        <item>@drawable/img8</item>
+        <item>@drawable/img9</item>
+        <item>@drawable/img10</item>
+        <item>@drawable/img11</item>
+        <item>@drawable/img12</item>
+    </string-array>
+
 </resources>
