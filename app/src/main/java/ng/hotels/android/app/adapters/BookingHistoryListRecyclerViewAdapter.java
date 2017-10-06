@@ -1,4 +1,4 @@
-package ng.hotels.android.app.ui.fragments;
+package ng.hotels.android.app.adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -55,8 +55,8 @@ public class BookingHistoryListRecyclerViewAdapter extends RecyclerView.Adapter<
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            mIdView = (TextView) view.findViewById(R.id.id);
-            mContentView = (TextView) view.findViewById(R.id.content);
+            mIdView = (TextView) view.findViewById(R.id.date_view);
+            mContentView = (TextView) view.findViewById(R.id.date_identifier);
         }
 
         @Override
