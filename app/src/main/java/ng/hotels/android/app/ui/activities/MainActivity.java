@@ -87,5 +87,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), BookingDetailsActivity.class));
     }
 
+    public void openSettings(View view) {
+        startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
+    }
+
 
 }
