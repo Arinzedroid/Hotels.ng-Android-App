@@ -74,7 +74,8 @@
         <activity android:name=".ui.activities.CardInfoActivity" />
         <activity android:name=".ui.activities.InviteFriendsActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".ui.activities.BookingHistoryActivity" />
+        <activity android:name=".ui.activities.BookingHistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".ui.activities.UserProfileActivity"></activity>
         <activity
             android:name=".ui.activities.SettingsActivity"

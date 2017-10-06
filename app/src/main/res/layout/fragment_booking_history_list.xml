@@ -93,7 +93,7 @@
         android:name="ng.hotels.android.app.ui.fragments.BookingHistoryListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="186dp"
+        android:layout_marginTop="192dp"
         android:background="@color/colorFaint"
         app:layoutManager="LinearLayoutManager"
         tools:listitem="@layout/content_booking_history"/>

@@ -96,9 +96,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), InviteFriendsActivity.class));
     }
 
-    public void openHistory(View view) {
+    public void openHistoryDetail(View view) {
         Intent intent = new Intent(getApplicationContext(), BookingHistoryActivity.class);
         intent.putExtra("page", 0);
+        startActivity(intent);
+    }
+
+    public void openHistoryList(View view) {
+        Intent intent = new Intent(getApplicationContext(), BookingHistoryActivity.class);
+        intent.putExtra("page", 1);
         startActivity(intent);
     }
 }

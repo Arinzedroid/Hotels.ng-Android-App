@@ -11,7 +11,8 @@ import ng.hotels.android.app.ui.fragments.BookingHistoryDetailsFragment;
 import ng.hotels.android.app.ui.fragments.BookingHistoryListFragment;
 
 public class BookingHistoryActivity extends AppCompatActivity implements
-        BookingHistoryDetailsFragment.OnFragmentInteractionListener{
+        BookingHistoryDetailsFragment.OnFragmentInteractionListener,
+        BookingHistoryListFragment.OnListFragmentInteractionListener{
 
     private BookingHistoryDetailsFragment bookingHistoryDetailsFragment;
     private BookingHistoryListFragment bookingHistoryListFragment;
@@ -54,6 +55,11 @@ public class BookingHistoryActivity extends AppCompatActivity implements
 
     @Override
     public void onFragmentInteraction() {
+
+    }
+
+    @Override
+    public void onListFragmentInteraction() {
 
     }
 }
