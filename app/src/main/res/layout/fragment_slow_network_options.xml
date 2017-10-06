@@ -22,15 +22,17 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:padding="30dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center"
-        android:background="@drawable/rounded_corner_spinner_border">
+        android:gravity="center">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corner_spinner_border"
+            android:padding="25dp"
+            android:layout_margin="20dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,6 +72,7 @@
         android:textColor="@color/check_out_default" />
 
 
+    </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

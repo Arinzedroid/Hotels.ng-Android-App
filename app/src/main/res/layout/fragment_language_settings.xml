@@ -41,8 +41,7 @@
         android:layout_height="40dp"
         android:layout_marginBottom="30dp"
         android:spinnerMode="dropdown"
-        android:dropDownWidth="fill_parent"
-        android:background="@color/check_out_default" />
+        android:background="@drawable/spinner_arrow_white" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -59,7 +58,6 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginBottom="30dp"
-        android:dropDownWidth="fill_parent"
         android:background="@drawable/spinner_arrow_white"
         />
 
