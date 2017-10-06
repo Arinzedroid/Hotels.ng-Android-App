@@ -12,8 +12,7 @@
         android:layout_height="wrap_content"
         android:background="@color/check_out_blue"
         android:textAlignment="center"
-        android:textSize="35sp"
-        android:padding="5dp"
+        android:textSize="40sp"
         android:text="@string/app_name_small"
         android:textStyle="bold"
         android:textColor="@color/check_out_default"/>
@@ -50,8 +49,8 @@
         android:layout_marginTop="10dp"
         android:minHeight="16dp"
         android:minWidth="16dp"
-        android:padding="5dp"
-        android:background="@drawable/rounded_corner_blue"
+        android:padding="10dp"
+        android:background="@drawable/curved_corner_blue"
         android:textSize="15sp"
         android:text="@string/slow_network_low_quality"
         android:textColor="@color/check_out_default" />
@@ -64,8 +63,8 @@
         android:textAlignment="center"
         android:minHeight="16dp"
         android:minWidth="16dp"
-        android:padding="5dp"
-        android:background="@drawable/rounded_corner_blue"
+        android:padding="10dp"
+        android:background="@drawable/curved_corner_blue"
         android:textSize="15sp"
         android:text="@string/slow_network_high_quality"
         android:textColor="@color/check_out_default" />

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/check_out_default"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/check_out_blue"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:text="@string/app_name_small"
+        android:textStyle="bold"
+        android:textColor="@color/check_out_default"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:labelFor="@+id/spinner_nationality"
+        android:paddingBottom="5dp"
+        android:text="@string/slow_network"
+        android:textColor="@color/check_out_default"/>
+
+
+</LinearLayout>
