@@ -29,6 +29,7 @@
     <string name="checkout_email">Email Address</string>
     <string name="checkout_button">Proceed</string>
 
+    <string name="app_name_small">hotels.ng</string>
     <string name="slow_network">This is taking longer....</string>
     <string name="slow_network_title">We have detected that you seem to be using  a slow network connection. Would you like to change your settings?</string>
     <string name="slow_network_low_quality">Continuw with Low Quality Image</string>
