@@ -50,7 +50,7 @@ public class HelpAdapter extends BaseAdapter {
         TextView article =  view.findViewById(R.id.textView);
         ImageView icon =  view.findViewById(R.id.icon);
         article.setText(ArticleList[i]);
-        icon.setImageResource(R.drawable.hotel_logo);
+        icon.setImageResource(R.drawable.article);
         return view;
 
     }
