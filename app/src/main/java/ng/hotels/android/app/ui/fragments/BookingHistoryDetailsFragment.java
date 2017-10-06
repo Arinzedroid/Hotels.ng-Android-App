@@ -7,7 +7,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import ng.hotels.android.app.R;
 
 /**
@@ -22,6 +27,38 @@ public class BookingHistoryDetailsFragment extends Fragment {
 
 
     private OnFragmentInteractionListener mListener;
+    @BindView(R.id.depature_town)
+    TextView depatureTown;
+    @BindView(R.id.arrival_town)
+    TextView arrivalTown;
+    @BindView(R.id.date_view)
+    TextView dateView;
+    @BindView(R.id.date_identifier)
+    TextView dateIdentifier;
+    @BindView(R.id.day_month)
+    TextView dayMonth;
+    @BindView(R.id.booking_type)
+    ImageView bookingType;
+    @BindView(R.id.airline_name)
+    TextView airlineName;
+    @BindView(R.id.booking_cost)
+    TextView bookingCost;
+    @BindView(R.id.flight_code)
+    TextView flightCode;
+    @BindView(R.id.terminal_number)
+    TextView terminalNumber;
+    @BindView(R.id.seat_number)
+    TextView seatNumber;
+    @BindView(R.id.zone_number)
+    TextView zoneNumber;
+    @BindView(R.id.depature_time)
+    TextView depatureTime;
+    @BindView(R.id.arrival_time)
+    TextView arrivalTime;
+    @BindView(R.id.pnr_code)
+    TextView pnrCode;
+    @BindView(R.id.bar_code)
+    ImageView barCode;
 
     public BookingHistoryDetailsFragment() {
         // Required empty public constructor
@@ -51,7 +88,10 @@ public class BookingHistoryDetailsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_booking_history_details, container, false);
+        View view = inflater.inflate(R.layout.fragment_booking_history_details, container, false);
+        ButterKnife.bind(this, view);
+
+        return view;
     }
 
 
@@ -70,6 +110,11 @@ public class BookingHistoryDetailsFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @OnClick(R.id.book_again)
+    public void bookAgain(){
+
     }
 
     /**

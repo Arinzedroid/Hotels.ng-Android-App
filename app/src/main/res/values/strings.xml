@@ -135,5 +135,14 @@
     <string name="pnr_code">013456</string>
     <string name="book_again">BOOK AGAIN</string>
     <string name="booking_cost">N 25,000</string>
+    <string name="dicount_percentage">30% off</string>
+    <string name="when_valid">Your next Booking</string>
+    <string name="discount_offer">Give friends 15% iwth your promo code, and you\'ll get 20% off your next booking when they book.</string>
+    <string name="invite_friends">INVITE FRIENDS</string>
+    <string name="or">or</string>
+    <string name="hardcode_invite_code">HNGNIG</string>
+    <string name="share_text">Share invite code</string>
+    <string name="terms_of_use">TERMS OF USE</string>
+    <string name="invite">invite</string>
 
 </resources>
