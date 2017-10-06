@@ -2,7 +2,8 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp">
 
 
     <android.support.v7.widget.CardView
@@ -53,9 +54,10 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/day_month"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sep. Monday"
+                    android:text="@string/day_month_short"
                     android:textColor="@color/textDark"
                     android:textSize="24sp" />
             </LinearLayout>
@@ -67,6 +69,7 @@
                 android:layout_marginBottom="12dp">
 
                 <TextView
+                    android:id="@+id/depature_town"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/departure_town"
@@ -80,12 +83,13 @@
                     android:layout_marginEnd="6dp"
                     android:layout_marginStart="6dp"
                     android:gravity="center"
-                    android:text="-"
+                    android:text="@string/separator"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     android:textColor="@color/textDark"
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/arrival_town"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/arrival_town"
@@ -106,21 +110,21 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Departure"
+                        android:text="@string/departure"
                         android:textColor="@color/textLight"
                         android:textSize="15sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Arrival"
+                        android:text="@string/arrival_small_caps"
                         android:textColor="@color/textLight"
                         android:textSize="15sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Airline"
+                        android:text="@string/airline"
                         android:textColor="@color/textLight"
                         android:textSize="15sp" />
                 </LinearLayout>
@@ -136,23 +140,29 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/depature_time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/depature_time"
+                        android:textStyle="bold"
                         android:textColor="@color/textDark"
                         android:textSize="15sp" />
 
                     <TextView
+                        android:id="@+id/arrival_time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/arrival_time"
+                        android:textStyle="bold"
                         android:textColor="@color/textDark"
                         android:textSize="15sp" />
 
                     <TextView
+                        android:id="@+id/airline_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/arik_airline"
+                        android:textStyle="bold"
                         android:textColor="@color/textDark"
                         android:textSize="15sp" />
                 </LinearLayout>
@@ -181,7 +191,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
                     android:layout_marginStart="10dp"
-                    android:text="REVIEW"
+                    android:text="@string/review"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp"
                     android:textStyle="bold" />

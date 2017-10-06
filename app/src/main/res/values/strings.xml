@@ -145,5 +145,11 @@
     <string name="terms_of_use">TERMS OF USE</string>
     <string name="invite">invite</string>
     <string name="booking_history">Booking History</string>
+    <string name="day_month_short">Sep. Monday</string>
+    <string name="separator">-</string>
+    <string name="departure">Departure</string>
+    <string name="arrival_small_caps">Arrival</string>
+    <string name="airline">Airline</string>
+    <string name="review">REVIEW</string>
 
 </resources>
