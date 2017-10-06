@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), InviteFriendsActivity.class));
     }
 
-    public void openHistory(View view) {
+    public void openHistoryDetail(View view) {
         Intent intent = new Intent(getApplicationContext(), BookingHistoryActivity.class);
         intent.putExtra("page", 0);
         startActivity(intent);
@@ -108,6 +108,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void openCustomerServiceChat(View view){
         startActivity(new Intent(this,CustomerServiceStartConversationActivity.class));
+    }
+
+    public void openHistoryList(View view) {
+        Intent intent = new Intent(getApplicationContext(), BookingHistoryActivity.class);
+        intent.putExtra("page", 1);
+        startActivity(intent);
     }
 
 }
