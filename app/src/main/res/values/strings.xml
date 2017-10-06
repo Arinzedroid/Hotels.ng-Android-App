@@ -90,5 +90,28 @@
     <string name="select_room">SELECT ROOM</string>
     <string name="your_info">Your Info</string>
     <string name="check_out">Check out</string>
+    <string name="passenger">PASSENGER</string>
+    <string name="arik_airline">Arik Airline</string>
+    <string name="flight">FLIGHT</string>
+    <string name="flight_code">IN456</string>
+    <string name="terminal">TERMINAL</string>
+    <string name="terminal_no">10</string>
+    <string name="seat">SEAT</string>
+    <string name="seat_no">17A</string>
+    <string name="zone">ZONE</string>
+    <string name="zone_no">2</string>
+    <string name="month_day">September, Monday</string>
+    <string name="date_identifier">th</string>
+    <string name="date">11</string>
+    <string name="arrival_town">Lagos</string>
+    <string name="departure_town">Uyo</string>
+    <string name="depature">DEPATURE</string>
+    <string name="depature_time">12.00PM</string>
+    <string name="arrival">ARRIVAL</string>
+    <string name="arrival_time">13.00PM</string>
+    <string name="pnr">PNR</string>
+    <string name="pnr_code">013456</string>
+    <string name="book_again">BOOK AGAIN</string>
+    <string name="booking_cost">N 25,000</string>
 
 </resources>
