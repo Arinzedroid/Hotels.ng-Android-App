@@ -1,18 +1,17 @@
 package ng.hotels.android.app.ui.activities;
 
-import java.util.ArrayList;
-import android.content.Intent;
-import android.os.Bundle;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.support.v7.app.ActionBarActivity;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.GridView;
 
-public class MocaptureActivity extends ActionBarActivity {
+import java.util.ArrayList;
+
+import ng.hotels.android.app.R;
+
+public class MocaptureActivity extends AppCompatActivity {
     private GridView gridView;
     private GridViewAdapter gridAdapter;
 

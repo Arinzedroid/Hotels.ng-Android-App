@@ -9,8 +9,7 @@
         android:id="@+id/icon"
         android:layout_gravity="center"
         android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:src="@drawable/call" />
+        android:layout_height="20dp" />
 
     <TextView
         android:id="@+id/textView"

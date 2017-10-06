@@ -14,12 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-
         <meta-data android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>
         <activity android:name="com.facebook.FacebookActivity"
-            android:configChanges=
-                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
         <activity
             android:name="com.facebook.CustomTabActivity"
@@ -42,7 +40,6 @@
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -76,7 +73,7 @@
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".ui.activities.BookingHistoryActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".ui.activities.UserProfileActivity"></activity>
+        <activity android:name=".ui.activities.UserProfileActivity"/>
         <activity
             android:name=".ui.activities.SettingsActivity"
             android:theme="@style/AppTheme" />
@@ -89,10 +86,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ng.hotels.android.app.ui.activities.CustomerServiceStartConversationActivity" />
         </activity>
-        <activity android:name=".ui.activities.BookingHistoryActivity"></activity>
 		<activity
-            android:name=".MocaptureActivity"
-            android:label="MOCapture" >
+            android:name=".ui.activities.MocaptureActivity"
+            android:label="@string/mo_capture" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

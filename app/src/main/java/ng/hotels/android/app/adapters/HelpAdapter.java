@@ -1,4 +1,4 @@
-package ng.hotels.android.app.ui.adapters;
+package ng.hotels.android.app.adapters;
 
 /**
  * Created by Arinze on 10/6/2017.
@@ -50,7 +50,7 @@ public class HelpAdapter extends BaseAdapter {
         TextView article =  view.findViewById(R.id.textView);
         ImageView icon =  view.findViewById(R.id.icon);
         article.setText(ArticleList[i]);
-        icon.setImageResource(R.drawable.article);
+        icon.setImageResource(R.drawable.hotel_logo);
         return view;
 
     }

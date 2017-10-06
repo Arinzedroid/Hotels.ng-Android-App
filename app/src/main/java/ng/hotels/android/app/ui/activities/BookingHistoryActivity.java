@@ -60,6 +60,6 @@ public class BookingHistoryActivity extends AppCompatActivity implements
 
     @Override
     public void onListFragmentInteraction() {
-
+        showBookingHistoryDetailsFragment();
     }
 }

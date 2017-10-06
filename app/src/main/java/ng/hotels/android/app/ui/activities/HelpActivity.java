@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.widget.ListView;
 
 import ng.hotels.android.app.R;
-import ng.hotels.android.app.ui.adapters.HelpAdapter;
+import ng.hotels.android.app.adapters.HelpAdapter;
 
 public class HelpActivity extends Activity {
 

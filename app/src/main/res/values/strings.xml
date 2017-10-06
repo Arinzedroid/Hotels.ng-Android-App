@@ -171,8 +171,8 @@
     <string name="title_name_loyalty">Loyalty Coins</string>
     <string name="booking">Uyo - Lagos</string>
 
-	<string name="app_name">MoCapture</string>
-    <string name="action_settings">Action Settings</string>
+	<string name="mo_capture">MoCapture</string>
+    <string name="action_settings_two">Action Settings</string>
     <string-array name="image_ids">
         <item>@drawable/img1</item>
         <item>@drawable/img2</item>

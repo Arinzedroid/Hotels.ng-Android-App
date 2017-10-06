@@ -3,13 +3,16 @@ package ng.hotels.android.app.ui.activities;
 /**
  * Created by ifyy on 06-Oct-17.
  */
+
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class DetailsActivity extends ActionBarActivity {
+import ng.hotels.android.app.R;
+
+public class DetailsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

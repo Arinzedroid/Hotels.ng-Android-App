@@ -3,7 +3,6 @@ package ng.hotels.android.app.ui.activities;
 /**
  * Created by ifyy on 06-Oct-17.
  */
-import java.util.ArrayList;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,6 +12,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+
+import ng.hotels.android.app.R;
 
 public class GridViewAdapter extends ArrayAdapter<ImageItem> {
 
