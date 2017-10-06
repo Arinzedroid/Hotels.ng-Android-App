@@ -62,6 +62,7 @@ dependencies {
     compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
     compile 'com.jakewharton:butterknife:8.8.1'
 
+    compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.facebook.android:facebook-login:4.27.0'
     compile 'com.google.android.gms:play-services-auth:11.4.0'
     compile 'com.ms-square:expandableTextView:0.1.4'

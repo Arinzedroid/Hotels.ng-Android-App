@@ -29,7 +29,7 @@
         <activity
             android:name=".ui.activities.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.activities.HomeActivity"
             android:label="@string/title_activity_home"
@@ -48,7 +48,16 @@
         <activity android:name=".ui.activities.SuccessfulBookingActivity" />
         <activity android:name=".ui.activities.BookingActivity" />
         <activity android:name=".ui.activities.CardInfoActivity" />
-        <activity android:name=".ui.activities.InviteFriendsActivity"></activity>
+        <activity android:name=".ui.activities.InviteFriendsActivity" />
+        <activity android:name=".ui.activities.CustomerServiceStartConversationActivity" />
+        <activity
+            android:name=".ui.activities.CustomerServiceChatActivity"
+            android:label="@string/title_activity_customer_service_chat"
+            android:parentActivityName=".ui.activities.CustomerServiceStartConversationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ng.hotels.android.app.ui.activities.CustomerServiceStartConversationActivity" />
+        </activity>
     </application>
 
 </manifest>

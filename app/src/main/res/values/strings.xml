@@ -90,5 +90,13 @@
     <string name="select_room">SELECT ROOM</string>
     <string name="your_info">Your Info</string>
     <string name="check_out">Check out</string>
+    <string name="start_conversation">Start a Conversation</string>
+    <string name="mark">Mark</string>
+    <string name="i_am_happy_to_help_with_any_questions_you_have_about_hotels_ng">I am happy to help with any questions you have about Hotels.ng</string>
+    <string name="cs_agent">CS Agent</string>
+    <string name="title_activity_customer_service_chat">CustomerServiceChatActivity</string>
+    <string name="write_a_reply">Write a reply</string>
+    <string name="action_call">Call</string>
+    <string name="online">Online</string>
 
 </resources>

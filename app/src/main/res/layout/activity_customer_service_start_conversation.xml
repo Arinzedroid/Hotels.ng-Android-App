@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frame_layout_customer_service_chat"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mark" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.9"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/linear_layout_customer_service_chat_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!--Circular image view-->
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/mark"
+                        app:civ_border_width="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/mark"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Online"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/text_customer_service_chat_agent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:text="@string/i_am_happy_to_help_with_any_questions_you_have_about_hotels_ng"
+                    android:textColor="@color/white" />
+
+
+                <TextView
+                    android:id="@+id/text_customer_service_chat_agent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/rating_bar_customer_service_chat"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/cs_agent"
+                    android:textColor="@color/white" />
+
+                <RatingBar
+                    android:id="@+id/rating_bar_customer_service_chat"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:rating="5" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button_start_conversation_customer_service_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/start_conversation"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

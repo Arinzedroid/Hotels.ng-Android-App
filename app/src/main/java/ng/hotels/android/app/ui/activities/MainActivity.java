@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openLoginpage(View view) {
-        startActivity(new Intent(getApplicationContext(), UserAuthenticationActivity.class));
+        startActivity(new Intent(getApplicationContext(), CustomerServiceStartConversationActivity.class));
     }
 
 
