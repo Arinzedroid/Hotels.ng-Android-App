@@ -144,5 +144,6 @@
     <string name="share_text">Share invite code</string>
     <string name="terms_of_use">TERMS OF USE</string>
     <string name="invite">invite</string>
+    <string name="booking_history">Booking History</string>
 
 </resources>
