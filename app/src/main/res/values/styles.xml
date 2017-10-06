@@ -52,5 +52,9 @@
         <item name="colorControlNormal">@color/colorPrimary</item>
         <item name="colorControlActivated">@color/colorPrimary</item>
     </style>
+	
+	<style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#0000FF</item>
+    </style>
 
 </resources>
