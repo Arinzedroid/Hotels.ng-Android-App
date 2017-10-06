@@ -70,7 +70,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:background="#fffafafa"
-                        android:rating="3.5" />
+                        android:rating="4" />
 
                 </LinearLayout>
             </LinearLayout>
