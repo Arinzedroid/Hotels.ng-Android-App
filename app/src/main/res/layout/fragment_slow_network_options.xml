@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/check_out_default"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/check_out_blue"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:text="@string/app_name_small"
+        android:textStyle="bold"
+        android:textColor="@color/check_out_default"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corner_spinner_border"
+            android:padding="25dp"
+            android:layout_margin="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:labelFor="@+id/spinner_language"
+            android:paddingBottom="20dp"
+            android:text="@string/slow_network_title"
+            android:textColor="@color/check_out_blue"/>
+
+    <Button
+        android:id="@+id/low_network_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:minHeight="16dp"
+        android:minWidth="16dp"
+        android:padding="10dp"
+        android:background="@drawable/curved_corner_blue"
+        android:textSize="15sp"
+        android:text="@string/slow_network_low_quality"
+        android:textColor="@color/check_out_default" />
+
+    <Button
+        android:id="@+id/high_network_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:minHeight="16dp"
+        android:minWidth="16dp"
+        android:padding="10dp"
+        android:background="@drawable/curved_corner_blue"
+        android:textSize="15sp"
+        android:text="@string/slow_network_high_quality"
+        android:textColor="@color/check_out_default" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

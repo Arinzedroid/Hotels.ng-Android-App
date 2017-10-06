@@ -29,7 +29,7 @@ public class SingleHotelSlideAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        View imageLayout = inflater.inflate(R.layout.slide, container, false);
+        View imageLayout = inflater.inflate(R.layout.single_hotel_page_slide, container, false);
 
         ImageView myImage = (ImageView) imageLayout.findViewById(R.id.image);
 
