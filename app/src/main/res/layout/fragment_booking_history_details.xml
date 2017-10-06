@@ -120,6 +120,7 @@
             app:cardCornerRadius="6dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="210dp"
+            android:layout_marginBottom="16dp"
             app:cardElevation="4dp">
 
             <LinearLayout
