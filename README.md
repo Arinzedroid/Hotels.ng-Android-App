@@ -14,9 +14,9 @@ Mobile application for Nigeria's biggest online hotel booking agency.
 # Contribution guide & Naming conventions
 - Android studio 3.0 is used & recommended for this project.
 - Solid knowledge of [GIT](https://try.github.io) and intermediate knowledge of Android is recommended.
-- Please pull before you push.
+- Please pull before you push. Do not force push
 - Classes start with capital letters and are written in camel case. Your class names should be descriptive. Example `TourGuideActivity`.
-- All activity classes should end with Activity and fragment classes with Fragment.
+- All activity class names should end with Activity and fragment classes with Fragment. Example `MainActivity`
 - Follow the app structure by placing your classes in their due package. The repo has already been structured to the acceptable standard.
 - All methods should start with small letters and are written in camel case. Method names should also be descriptive. Example `validateLoginDetails()`
 - XML ids are all small letters and separated with underscore if there are more than one syllable.

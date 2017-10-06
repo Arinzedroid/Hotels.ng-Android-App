@@ -3,7 +3,7 @@
     package="ng.hotels.android.app">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:name=".AppController"
@@ -16,6 +16,7 @@
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
+
         <activity
             android:name=".ui.activities.SplashActivity"
             android:theme="@style/SplashTheme">
@@ -28,18 +29,15 @@
         <activity
             android:name=".ui.activities.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.activities.HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activities.FlightsListingActivity" />
         <activity
             android:name=".ui.activities.FlightDetailActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activities.UserAuthenticationActivity" />
         <activity android:name=".ui.activities.SingleHotelPageActivity" />
         <activity
@@ -49,7 +47,9 @@
         <activity android:name=".ui.activities.BookingDetailsActivity" />
         <activity android:name=".ui.activities.SuccessfulBookingActivity" />
         <activity android:name=".ui.activities.BookingActivity" />
-        <activity android:name=".ui.activities.CardInfoActivity"></activity>
+        <activity android:name=".ui.activities.CardInfoActivity" />
+        <activity android:name=".ui.activities.InviteFriendsActivity" />
+        <activity android:name=".ui.activities.BookingHistoryActivity"></activity>
     </application>
 
 </manifest>
