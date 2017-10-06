@@ -29,8 +29,9 @@
     <string name="checkout_email">Email Address</string>
     <string name="checkout_button">Proceed</string>
 
-    <string name="facebook_app_id"></string>
-    <string name="fb_login_protocol_scheme"></string>
+
+    <string name="facebook_app_id">551060571900219</string>
+    <string name="fb_login_protocol_scheme">fb551060571900219</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="hotel_rating_wonderful">Wonderful</string>
     <string name="overall_guest_score">overall guest score</string>

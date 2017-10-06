@@ -209,12 +209,11 @@
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
-            android:text="@string/dstv"
             android:textColor="#4F4F4F"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="@+id/view2"
             app:layout_constraintLeft_toLeftOf="@+id/imageView6"
-            tools:text="@string/dstv" />
+            android:text="@string/dstv" />
 
         <View
             android:id="@+id/view2"
