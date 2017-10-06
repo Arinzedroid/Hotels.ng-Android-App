@@ -58,6 +58,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ng.hotels.android.app.ui.activities.CustomerServiceStartConversationActivity" />
         </activity>
+        <activity android:name=".ui.activities.BookingHistoryActivity"></activity>
+
     </application>
 
 </manifest>

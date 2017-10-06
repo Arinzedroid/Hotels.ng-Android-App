@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openLoginpage(View view) {
-        startActivity(new Intent(getApplicationContext(), CustomerServiceStartConversationActivity.class));
+        startActivity(new Intent(getApplicationContext(), UserAuthenticationActivity.class));
     }
 
 
@@ -85,6 +85,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void openBookingDetails(View view) {
         startActivity(new Intent(getApplicationContext(), BookingDetailsActivity.class));
+    }
+
+    public void openSettings(View view) {
+        startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
     }
 
 

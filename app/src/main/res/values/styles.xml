@@ -44,4 +44,13 @@
 
     </style>
 
+    <style name="switch_theme">
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="check_box_theme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
 </resources>
