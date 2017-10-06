@@ -48,16 +48,16 @@ public class BookingHistoryListRecyclerViewAdapter extends RecyclerView.Adapter<
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public final View mView;
-        public final TextView mIdView;
-        public final TextView mContentView;
+        View mView;
+        TextView mIdView;
+        TextView mContentView;
 
         public ViewHolder(View view) {
             super(view);
             mView = view;
             mIdView = (TextView) view.findViewById(R.id.date_view);
             mContentView = (TextView) view.findViewById(R.id.date_identifier);
-        }
+ }
 
         @Override
         public String toString() {

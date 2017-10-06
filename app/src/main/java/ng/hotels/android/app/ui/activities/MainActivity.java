@@ -105,4 +105,9 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("page", 0);
         startActivity(intent);
     }
+
+    public void openCustomerServiceChat(View view){
+        startActivity(new Intent(this,CustomerServiceStartConversationActivity.class));
+    }
+
 }

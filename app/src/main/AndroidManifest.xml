@@ -78,16 +78,17 @@
         <activity
             android:name=".ui.activities.SettingsActivity"
             android:theme="@style/AppTheme" />
-        <activity android:name=".ui.activities.CustomerServiceStartConversationActivity" />
+        <activity android:name=".ui.activities.CustomerServiceStartConversationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.activities.CustomerServiceChatActivity"
             android:label="@string/title_activity_customer_service_chat"
+            android:theme="@style/AppTheme.NoActionBar"
             android:parentActivityName=".ui.activities.CustomerServiceStartConversationActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ng.hotels.android.app.ui.activities.CustomerServiceStartConversationActivity" />
         </activity>
-        <activity android:name=".ui.activities.BookingHistoryActivity"></activity>
 
     </application>
 

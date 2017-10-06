@@ -1,5 +1,6 @@
 package ng.hotels.android.app.adapters;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,8 +20,11 @@ import ng.hotels.android.app.R;
 
 public class CustomerServiceChatAdapter extends RecyclerView.Adapter<CustomerServiceChatAdapter.ViewHolder> {
 
+    private Context context;
+
     @Inject
-    public CustomerServiceChatAdapter() {
+    public CustomerServiceChatAdapter(Context context) {
+        this.context = context;
     }
 
     @Override
@@ -39,19 +43,25 @@ public class CustomerServiceChatAdapter extends RecyclerView.Adapter<CustomerSer
         switch (position) {
 
             case 0:
-                params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+                params.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
+                holder.textView.setTextColor(context.getResources().getColor(R.color.white));
+                holder.textView.setBackgroundResource(R.drawable.rounded_corner_customer_chat_textview_blue);
                 break;
             case 1:
 
                 break;
             case 2:
                 params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+                holder.textView.setTextColor(context.getResources().getColor(R.color.white));
+                holder.textView.setBackgroundResource(R.drawable.rounded_corner_customer_chat_textview_blue);
                 break;
             case 3:
 
                 break;
             case 4:
                 params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+                holder.textView.setTextColor(context.getResources().getColor(R.color.white));
+                holder.textView.setBackgroundResource(R.drawable.rounded_corner_customer_chat_textview_blue);
                 break;
             case 5:
 
