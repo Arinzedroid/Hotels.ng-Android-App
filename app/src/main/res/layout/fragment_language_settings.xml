@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/check_out_blue"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:src="http://res.cloudinary.com/mofopeojosh/image/upload/co_rgb:ffffff,e_mask/v1507251847/images_oenhmm.png" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:paddingTop="10dp"
+            android:text="@string/language_settings_title"
+            android:textColor="@color/check_out_default"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:labelFor="@+id/spinner_nationality"
+        android:paddingBottom="5dp"
+        android:text="@string/language_settings_nationality"
+        android:textColor="@color/check_out_default"/>
+
+    <Spinner
+        android:id="@+id/spinner_nationality"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:spinnerMode="dropdown"
+        android:dropDownWidth="fill_parent"
+        android:background="@color/check_out_default" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:labelFor="@+id/spinner_language"
+        android:paddingBottom="5dp"
+        android:text="@string/language_settings_preferred"
+        android:textColor="@color/check_out_default"/>
+
+
+    <Spinner
+        android:id="@+id/spinner_language"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:dropDownWidth="fill_parent"
+        android:background="@drawable/spinner_arrow_white"
+        />
+
+
+
+    <Button
+        android:id="@+id/proceed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minHeight="16dp"
+        android:minWidth="16dp"
+        android:padding="10dp"
+        android:radius="10dp"
+        android:background="@drawable/curved_corner_white"
+        android:textSize="13sp"
+        android:text="@string/language_settings_button"
+        android:textColor="@color/check_out_blue" />
+
+</LinearLayout>

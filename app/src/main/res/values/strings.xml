@@ -29,6 +29,17 @@
     <string name="checkout_email">Email Address</string>
     <string name="checkout_button">Proceed</string>
 
+    <string name="slow_network">This is taking longer....</string>
+    <string name="slow_network_title">We have detected that you seem to be using  a slow network connection. Would you like to change your settings?</string>
+    <string name="slow_network_low_quality">Continuw with Low Quality Image</string>
+    <string name="slow_network_high_quality">Continue with High Quality Image</string>
+
+    <string name="language_settings_header">Language Settings</string>
+    <string name="language_settings_title">We are glad to serve you in your language</string>
+    <string name="language_settings_nationality">Select Nationality</string>
+    <string name="language_settings_preferred">Choose your preferred language</string>
+    <string name="language_settings_button">Save Changes</string>
+
     <string name="facebook_app_id">1204775476320820</string>
     <string name="fb_login_protocol_scheme">fb1204775476320820</string>
     <string name="already_have_an_account">Already have an account?</string>
