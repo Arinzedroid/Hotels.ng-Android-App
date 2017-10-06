@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/account">
+        <EditTextPreference
+            android:defaultValue="@string/dummy_email"
+            android:icon="@drawable/ic_email"
+            android:key="@string/mail"
+            android:summary="Edit email"
+            android:title="@string/mail" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/notifications">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key=""
+            android:icon="@drawable/ic_notifications"
+            android:summary="@string/show_notifications_when_locked"
+            android:title="@string/show_notifications" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key=""
+            android:icon="@drawable/ic_sms"
+            android:summary="@string/receive_sms_notifications"
+            android:title="@string/sms_notifications" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/general">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key=""
+            android:title="@string/night_mode" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
