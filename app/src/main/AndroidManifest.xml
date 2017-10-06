@@ -3,6 +3,7 @@
     package="ng.hotels.android.app">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:name=".AppController"
@@ -12,6 +13,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+
         <activity
             android:name=".ui.activities.SplashActivity"
             android:theme="@style/SplashTheme">
@@ -24,21 +49,46 @@
         <activity
             android:name=".ui.activities.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
         <activity
             android:name=".ui.activities.HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activities.FlightsListingActivity" />
-        <activity android:name=".ui.activities.FlightDetailActivity" />
+        <activity
+            android:name=".ui.activities.FlightDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activities.UserAuthenticationActivity" />
         <activity android:name=".ui.activities.SingleHotelPageActivity" />
         <activity
             android:name=".ui.activities.OnBoardingActivity"
-            android:label="@string/title_activity_onboarding"
+            android:label="@string/title_activity_on_boarding"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.activities.BookingDetailsActivity"></activity>
-        <activity android:name=".ui.activities.SuccessfulBookingActivity"></activity>
+        <activity android:name=".ui.activities.BookingDetailsActivity" />
+        <activity android:name=".ui.activities.SuccessfulBookingActivity" />
+        <activity android:name=".ui.activities.BookingActivity" />
+        <activity android:name=".ui.activities.CardInfoActivity" />
+        <activity android:name=".ui.activities.InviteFriendsActivity" />
+        <activity android:name=".ui.activities.BookingHistoryActivity" />
+        <activity android:name=".ui.activities.UserProfileActivity"></activity>
+        <activity
+            android:name=".ui.activities.SettingsActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ui.activities.CustomerServiceStartConversationActivity" />
+        <activity
+            android:name=".ui.activities.CustomerServiceChatActivity"
+            android:label="@string/title_activity_customer_service_chat"
+            android:parentActivityName=".ui.activities.CustomerServiceStartConversationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ng.hotels.android.app.ui.activities.CustomerServiceStartConversationActivity" />
+        </activity>
+        <activity android:name=".ui.activities.BookingHistoryActivity"></activity>
+
     </application>
 
 </manifest>

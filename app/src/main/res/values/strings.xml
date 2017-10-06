@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hotels.NG Android App</string>
+    <string name="app_name">Hotels.ng</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_home">hotels.ng</string>
     <string name="title_home">Home</string>
@@ -18,14 +18,35 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dont_have_an_account">Don\'t have an account?</string>
-    <string name="sign_up">Sign up</string>
-    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
     <string name="email_address">Email address</string>
     <string name="password">Password</string>
-    <string name="forgot_password">Forgot password?</string>
+    <string name="forgot_password">forgot password?</string>
 
-    <string name="facebook_app_id"></string>
-    <string name="fb_login_protocol_scheme"></string>
+    <string name="checkout_name">Full Name</string>
+    <string name="checkout_phone">Phone</string>
+    <string name="checkout_email">Email Address</string>
+    <string name="checkout_button">Proceed</string>
+
+
+
+    <string name="facebook_app_id">551060571900219</string>
+    <string name="fb_login_protocol_scheme">fb551060571900219</string>
+
+    <string name="app_name_small">hotels.ng</string>
+    <string name="slow_network">This is taking longer....</string>
+    <string name="slow_network_title">We have detected that you seem to be using  a slow network connection. Would you like to change your settings?</string>
+    <string name="slow_network_low_quality">Continuw with Low Quality Image</string>
+    <string name="slow_network_high_quality">Continue with High Quality Image</string>
+
+    <string name="language_settings_header">Language Settings</string>
+    <string name="language_settings_title">We are glad to serve you in your language</string>
+    <string name="language_settings_nationality">Select Nationality</string>
+    <string name="language_settings_preferred">Choose your preferred language</string>
+    <string name="language_settings_button">Save Changes</string>
+
+
     <string name="already_have_an_account">Already have an account?</string>
     <string name="hotel_rating_wonderful">Wonderful</string>
     <string name="overall_guest_score">overall guest score</string>
@@ -33,20 +54,27 @@
     <string name="light">Light</string>
     <string name="bar_lounge">Bar/Lounge</string>
     <string name="dstv">DSTV</string>
-    <string name="title_activity_onboarding">OnboardingActivity</string>
+    <string name="title_activity_on_boarding">OnBoardingActivity</string>
     <string name="section_format">Page %1$d</string>
     <string name="finish">Finish</string>
     <string name="skip">Skip</string>
     <string name="hotel_booking">Hotel booking</string>
     <string name="flight_booking">Flight booking</string>
     <string name="better_prices">Better prices</string>
+    <string name="confirm_password">Confirm password</string>
     <string name="hotels_for_you">Hotels for You</string>
     <string name="feature_place">Featured Places</string>
+
+    <string name="hotels_ng">hotels.ng</string>
+    <string name="enter_card">Enter card</string>
     <string name="contact_details">Contact Details</string>
     <string name="reservation_confirmation">Reservation Confirmation</string>
     <string name="payment_summary">Payment Summary</string>
     <string name="view_hotel_details">View hotel details</string>
     <string name="price">Price</string>
+    <string name="atm">ATM</string>
+    <string name="bank_deposit">BANK DEPOSIT</string>
+    <string name="pay_at_the_hotel">PAY AT THE HOTEL</string>
     <string name="reserved_by">Reserved by</string>
     <string name="ref_num">Ref Number</string>
     <string name="check_in">Check in</string>
@@ -64,5 +92,76 @@
     <string name="dummy_price">₦ 84,000</string>
     <string name="dummy_incl">All inclusive</string>
     <string name="dummy_email">johndoe@example.com</string>
+    <string name="payment_options">Payment Options</string>
+    <string name="confirm_booking">Confirm booking</string>
+    <string name="save">Save</string>
+    <string name="choose_card_type">Choose card type</string>
+    <string name="dummy_hotel_desc">Swiss International Mabisel is at No. 9, Mabisel Avenue Off Peter Odili in Port Harcourt, Rivers State.‎ This hotel combines beautiful designs and luxury accommodations to create an inviting ambience for guests to enjoy. It features free Wi-Fi and an outdoor swimming pool fitted with loungers.</string>
+    <string name="rooms_categories">Room categories</string>
+    <string name="superior_room">Superior Room</string>
+    <string name="deluxe_room">Deluxe Room</string>
+    <string name="free_wifi">Free Wifi</string>
+    <string name="per_night">PER NIGHT</string>
+    <string name="dummy_price2">₦ 34,800</string>
+    <string name="select_room">SELECT ROOM</string>
+    <string name="your_info">Your Info</string>
+    <string name="check_out">Check out</string>
+    <string name="start_conversation">Start a Conversation</string>
+    <string name="mark">Mark</string>
+    <string name="i_am_happy_to_help_with_any_questions_you_have_about_hotels_ng">I am happy to help with any questions you have about Hotels.ng</string>
+    <string name="cs_agent">CS Agent</string>
+    <string name="title_activity_customer_service_chat">CustomerServiceChatActivity</string>
+    <string name="write_a_reply">Write a reply</string>
+    <string name="action_call">Call</string>
+    <string name="online">Online</string>
+    <string name="settings">Settings</string>
+    <string name="account">Account</string>
+    <string name="mail">Mail</string>
+    <string name="notifications">Notifications</string>
+    <string name="show_notifications">Show notifications</string>
+    <string name="show_notifications_when_locked">Show notifications when locked</string>
+    <string name="sms_notifications">SMS notifications</string>
+    <string name="receive_sms_notifications">Receive SMS notifications</string>
+    <string name="general">General</string>
+    <string name="night_mode">Night mood</string>
+    <string name="passenger">PASSENGER</string>
+    <string name="arik_airline">Arik Airline</string>
+    <string name="flight">FLIGHT</string>
+    <string name="flight_code">IN456</string>
+    <string name="terminal">TERMINAL</string>
+    <string name="terminal_no">10</string>
+    <string name="seat">SEAT</string>
+    <string name="seat_no">17A</string>
+    <string name="zone">ZONE</string>
+    <string name="zone_no">2</string>
+    <string name="month_day">September, Monday</string>
+    <string name="date_identifier">th</string>
+    <string name="date">11</string>
+    <string name="arrival_town">Lagos</string>
+    <string name="departure_town">Uyo</string>
+    <string name="depature">DEPATURE</string>
+    <string name="depature_time">12.00PM</string>
+    <string name="arrival">ARRIVAL</string>
+    <string name="arrival_time">13.00PM</string>
+    <string name="pnr">PNR</string>
+    <string name="pnr_code">013456</string>
+    <string name="book_again">BOOK AGAIN</string>
+    <string name="booking_cost">N 25,000</string>
+    <string name="dicount_percentage">30% off</string>
+    <string name="when_valid">Your next Booking</string>
+    <string name="discount_offer">Give friends 15% iwth your promo code, and you\'ll get 20% off your next booking when they book.</string>
+    <string name="invite_friends">INVITE FRIENDS</string>
+    <string name="or">or</string>
+    <string name="hardcode_invite_code">HNGNIG</string>
+    <string name="share_text">Share invite code</string>
+    <string name="terms_of_use">TERMS OF USE</string>
+    <string name="invite">invite</string>
+    <string name="booking_history">Booking History</string>
+    <string name="day_month_short">Sep. Monday</string>
+    <string name="separator">-</string>
+    <string name="departure">Departure</string>
+    <string name="arrival_small_caps">Arrival</string>
+    <string name="airline">Airline</string>
+    <string name="review">REVIEW</string>
 
 </resources>
