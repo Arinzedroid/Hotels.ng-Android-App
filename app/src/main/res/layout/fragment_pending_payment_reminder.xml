@@ -8,4 +8,114 @@ android:layout_height="match_parent"
 tools:context="ui.fragments.PendingPaymentReminderFragment">
 
 
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/check_out_blue"
+        android:orientation="vertical"
+        android:padding="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PAYMENT REMINDER"
+            android:textAlignment="center"
+            android:textColor="@color/check_out_default"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/bell" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/payment_reminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/check_out_default"
+                    android:textStyle="bold"
+                    android:text="Hello User,
+You have one pending payment on your booking page. How do you wish to proceed?" />
+
+                <Button
+                    android:id="@+id/cancel_booking_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/pay_now_button"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/curved_corner_white"
+                    android:padding="10dp"
+                    android:text="CANCEL"
+                    android:textAlignment="center"
+                    android:textColor="@color/check_out_blue" />
+
+                <Button
+                    android:id="@+id/pay_later_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/pay_now_button"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/curved_corner_white"
+                    android:padding="10dp"
+                    android:text="PAY LATER"
+                    android:textAlignment="center"
+                    android:textColor="@color/check_out_blue" />
+
+                <Button
+                    android:id="@+id/pay_now_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/payment_reminder"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/curved_corner_white"
+                    android:padding="10dp"
+                    android:text="PAY NOW"
+                    android:textAlignment="center"
+                    android:textColor="@color/check_out_blue" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 </android.support.constraint.ConstraintLayout>
