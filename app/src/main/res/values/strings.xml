@@ -139,7 +139,7 @@
     <string name="date">11</string>
     <string name="arrival_town">Lagos</string>
     <string name="departure_town">Uyo</string>
-    <string name="depature">DEPATURE</string>
+    <string name="depature">DEPARTURE</string>
     <string name="depature_time">12.00PM</string>
     <string name="arrival">ARRIVAL</string>
     <string name="arrival_time">13.00PM</string>
@@ -167,5 +167,7 @@
     <string name="history">History</string>
     <string name="loyalty_balance">My Balance\n  100250.00lc</string>
     <string name="gain">Gain</string>
+    <string name="profile_name">SALAKO ADETUNJI</string>
+    <string name="title_name_loyalty">Loyalty Coins</string>
 
 </resources>
