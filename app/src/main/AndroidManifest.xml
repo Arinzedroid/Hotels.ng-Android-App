@@ -72,7 +72,8 @@
         <activity android:name=".ui.activities.SuccessfulBookingActivity" />
         <activity android:name=".ui.activities.BookingActivity" />
         <activity android:name=".ui.activities.CardInfoActivity" />
-        <activity android:name=".ui.activities.InviteFriendsActivity" />
+        <activity android:name=".ui.activities.InviteFriendsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".ui.activities.CustomerServiceStartConversationActivity" />
         <activity
             android:name=".ui.activities.CustomerServiceChatActivity"
@@ -82,7 +83,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ng.hotels.android.app.ui.activities.CustomerServiceStartConversationActivity" />
         </activity>
-        <activity android:name=".ui.activities.BookingHistoryActivity"></activity>
+        <activity android:name=".ui.activities.BookingHistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
     </application>
 

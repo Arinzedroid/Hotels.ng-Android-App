@@ -92,4 +92,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void openInvite(View view) {
+        startActivity(new Intent(getApplicationContext(), InviteFriendsActivity.class));
+    }
+
+    public void openHistory(View view) {
+        Intent intent = new Intent(getApplicationContext(), BookingHistoryActivity.class);
+        intent.putExtra("page", 0);
+        startActivity(intent);
+    }
 }

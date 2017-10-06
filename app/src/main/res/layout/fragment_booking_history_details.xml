@@ -9,94 +9,109 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <android.support.design.widget.AppBarLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:background="@color/colorPrimary">
+            android:layout_height="wrap_content"
+            android:elevation="2dp">
 
-            <RelativeLayout
+            <android.support.design.widget.AppBarLayout
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize">
+                android:layout_height="250dp"
+                android:background="@color/colorPrimary">
 
-                <TextView
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="48dp"
+                        android:layout_marginStart="48dp"
+                        android:text="@string/booking_history"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="48dp"
-                    android:layout_marginStart="48dp"
-                    android:text="@string/booking_history"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textColor="@color/white" />
-            </RelativeLayout>
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/depature_town"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/departure_town"
+                        android:textSize="28sp"
+                        android:textColor="@color/white" />
 
-                <TextView
-                    android:id="@+id/depature_town"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_margin="8dp"
-                    android:gravity="center_vertical"
-                    android:text="@string/departure_town"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textColor="@color/white" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/circle">
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/circle"
-                    app:srcCompat="@drawable/ic_arrow_forward_white" />
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/ic_arrow_forward_white" />
 
-                <TextView
-                    android:id="@+id/arrival_town"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_margin="8dp"
-                    android:gravity="center_vertical"
-                    android:text="@string/arrival_town"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textColor="@color/white" />
-            </LinearLayout>
+                    </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/arrival_town"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/arrival_town"
+                        android:textSize="28sp"
+                        android:textColor="@color/white" />
+                </LinearLayout>
 
-                <TextView
-                    android:id="@+id/date_view"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/date"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Display2"
-                    android:textColor="@color/white" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
 
-                <TextView
-                    android:id="@+id/date_identifier"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginStart="-8dp"
-                    android:layout_marginTop="8dp"
-                    android:gravity="top|start"
-                    android:text="@string/date_identifier"
-                    android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/date_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Display2"
+                        android:textColor="@color/white" />
 
-                <TextView
-                    android:id="@+id/day_month"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/month_day"
-                    android:textColor="@color/white"
-                    android:textSize="24sp" />
-            </LinearLayout>
-        </android.support.design.widget.AppBarLayout>
+                    <TextView
+                        android:id="@+id/date_identifier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="-8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="top|start"
+                        android:text="@string/date_identifier"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/day_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/month_day"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </android.support.design.widget.AppBarLayout>
+        </LinearLayout>
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -105,7 +120,7 @@
             app:cardCornerRadius="6dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="210dp"
-            app:cardElevation="2dp">
+            app:cardElevation="4dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -134,7 +149,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="28dp"
                     android:layout_marginTop="20dp"
                     android:orientation="vertical">
 
@@ -148,6 +162,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
+                            android:layout_marginEnd="4dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -164,13 +179,15 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/flight_code"
                                 android:textColor="@color/textDark"
-                                android:textSize="24sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -187,13 +204,15 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/terminal_no"
                                 android:textColor="@color/textDark"
-                                android:textSize="24sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -210,7 +229,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/seat_no"
                                 android:textColor="@color/textDark"
-                                android:textSize="24sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -233,7 +252,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/zone_no"
                                 android:textColor="@color/textDark"
-                                android:textSize="24sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -241,8 +260,9 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="32dp"
                         android:background="@color/textLight" />
 
                     <LinearLayout
@@ -270,6 +290,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/depature_time"
+                                android:textStyle="bold"
                                 android:textColor="@color/textDark"
                                 android:textSize="14sp" />
                         </LinearLayout>
@@ -293,6 +314,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/arrival_time"
+                                android:textStyle="bold"
                                 android:textColor="@color/textDark"
                                 android:textSize="14sp" />
                         </LinearLayout>
@@ -316,6 +338,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/pnr_code"
+                                android:textStyle="bold"
                                 android:textColor="@color/textDark"
                                 android:textSize="14sp" />
                         </LinearLayout>
@@ -325,16 +348,17 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="32dp"
                         android:background="@color/textLight" />
 
                     <ImageView
                         android:id="@+id/bar_code"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_marginEnd="80dp"
-                        android:layout_marginStart="80dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="60dp"
+                        android:layout_marginStart="60dp"
                         android:gravity="center_horizontal"
                         android:scaleType="fitXY"
                         android:src="@drawable/hotel_img2" />
@@ -344,13 +368,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end"
-                        android:layout_marginBottom="60dp"
+                        android:layout_marginBottom="28dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginStart="20dp"
-                        android:layout_marginTop="40dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
                         android:text="@string/book_again"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="16sp" />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -363,7 +388,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="180dp"
             android:background="@drawable/circle_solid"
-            android:elevation="2dp"
+            android:elevation="4dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -383,7 +408,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="300dp"
             android:background="@drawable/subtract"
-            android:elevation="2dp">
+            android:elevation="4dp">
 
             <TextView
                 android:id="@+id/booking_cost"
@@ -393,6 +418,7 @@
                 android:layout_marginBottom="4dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginStart="20dp"
+                android:textStyle="bold"
                 android:text="@string/booking_cost"
                 android:textColor="@color/white"
                 android:textSize="16sp" />

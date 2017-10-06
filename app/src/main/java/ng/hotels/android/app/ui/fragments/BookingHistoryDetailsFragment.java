@@ -1,7 +1,6 @@
 package ng.hotels.android.app.ui.fragments;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -91,6 +92,10 @@ public class BookingHistoryDetailsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_booking_history_details, container, false);
         ButterKnife.bind(this, view);
 
+        Picasso.with(getContext())
+                .load("http://res.cloudinary.com/lanre01/image/upload/v1507308086/barcode_xkuioz.jpg")
+                .placeholder(R.drawable.hotel_img5)
+                .into(barCode);
         return view;
     }
 
@@ -129,6 +134,6 @@ public class BookingHistoryDetailsFragment extends Fragment {
      */
     public interface OnFragmentInteractionListener {
 
-        void onFragmentInteraction(Uri uri);
+        void onFragmentInteraction();
     }
 }

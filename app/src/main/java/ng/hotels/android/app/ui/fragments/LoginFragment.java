@@ -231,7 +231,6 @@ public class LoginFragment extends Fragment implements View.OnClickListener, Goo
     }
 
     @Override
-<<<<<<< HEAD
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode, resultCode, data);
@@ -247,18 +246,19 @@ public class LoginFragment extends Fragment implements View.OnClickListener, Goo
         if (result.isSuccess()) {
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
-            startActivity(new Intent( getActivity(), MainActivity.class));
+            startActivity(new Intent(getActivity(), MainActivity.class));
             //mStatusTextView.setText(getString(R.string.signed_in_fmt, acct.getDisplayName()));
             //updateUI(true);
         } else {
             // Signed out, show unauthenticated UI.
             //updateUI(false);
         }
-=======
+    }
+
+    @Override
     public void onDetach() {
         super.onDetach();
         mListener = null;
->>>>>>> 98ca8ef114f32c59b2a4915f51d8331941d8cf29
     }
 
     @OnClick(R.id.text_forgot_password)
