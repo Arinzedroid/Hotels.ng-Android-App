@@ -13,7 +13,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:adjustViewBounds="true"
-            android:src="http://res.cloudinary.com/mofopeojosh/image/upload/co_rgb:ffffff,e_mask/v1507251847/images_oenhmm.png" />
+            android:src="@mipmap/ic_launcher" />
 
         <TextView
             android:layout_width="wrap_content"
