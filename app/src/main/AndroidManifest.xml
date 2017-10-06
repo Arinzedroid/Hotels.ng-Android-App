@@ -29,7 +29,7 @@
         <activity
             android:name=".ui.activities.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.activities.HomeActivity"
             android:label="@string/title_activity_home"
@@ -48,7 +48,8 @@
         <activity android:name=".ui.activities.SuccessfulBookingActivity" />
         <activity android:name=".ui.activities.BookingActivity" />
         <activity android:name=".ui.activities.CardInfoActivity" />
-        <activity android:name=".ui.activities.InviteFriendsActivity"></activity>
+        <activity android:name=".ui.activities.InviteFriendsActivity" />
+        <activity android:name=".ui.activities.SettingsActivity"></activity>
     </application>
 
 </manifest>
