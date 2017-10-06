@@ -57,30 +57,17 @@
                     android:text="Hello User,
 You have one pending payment on your booking page. How do you wish to proceed?"
                     android:textColor="@color/check_out_default"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/cancel_booking_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/pay_later_button"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_below="@+id/pay_now_button"
-                    android:layout_marginTop="32dp"
-                    android:background="@drawable/curved_corner_white"
-                    android:padding="10dp"
-                    android:text="CANCEL"
                     android:textAlignment="center"
-                    android:textColor="@color/check_out_blue" />
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/pay_later_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/pay_now_button"
+                    android:layout_alignBottom="@+id/pay_later_button"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/payment_reminder"
                     android:layout_marginTop="32dp"
                     android:background="@drawable/curved_corner_white"
                     android:padding="10dp"
@@ -90,17 +77,19 @@ You have one pending payment on your booking page. How do you wish to proceed?"
 
                 <Button
                     android:id="@+id/pay_now_button"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/payment_reminder"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="32dp"
                     android:background="@drawable/curved_corner_white"
-                    android:padding="8dp"
+                    android:padding="10dp"
                     android:text="PAY NOW"
                     android:textAlignment="center"
                     android:textColor="@color/check_out_blue" />
+
+
             </RelativeLayout>
 
 
