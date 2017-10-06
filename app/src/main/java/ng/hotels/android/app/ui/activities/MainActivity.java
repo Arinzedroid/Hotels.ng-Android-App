@@ -91,5 +91,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
     }
 
+    public void HelpPage(View View){
+        startActivity(new Intent(getApplicationContext(),HelpActivity.class));
+    }
 
+
+    public void openInvite(View view) {
+        startActivity(new Intent(getApplicationContext(), InviteFriendsActivity.class));
+    }
+
+    public void openHistory(View view) {
+        Intent intent = new Intent(getApplicationContext(), BookingHistoryActivity.class);
+        intent.putExtra("page", 0);
+        startActivity(intent);
+    }
 }
