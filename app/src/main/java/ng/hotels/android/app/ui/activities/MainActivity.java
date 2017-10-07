@@ -91,5 +91,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
     }
 
+    public void openFlightTracking(View view) {
+        startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+    }
+
+    public void openFlightReceipt(View view) {
+        startActivity(new Intent(getApplicationContext(), FlightReservationReceiptActivity.class));
+    }
 
 }

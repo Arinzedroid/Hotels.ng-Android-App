@@ -145,7 +145,7 @@
     <string name="booking_cost">N 25,000</string>
     <string name="dicount_percentage">30% off</string>
     <string name="when_valid">Your next Booking</string>
-    <string name="discount_offer">Give friends 15% iwth your promo code, and you\'ll get 20% off your next booking when they book.</string>
+    <string name="discount_offer">Give friends 15 with your promo code, and youll get 20% off your next booking when they book.</string>
     <string name="invite_friends">INVITE FRIENDS</string>
     <string name="or">or</string>
     <string name="hardcode_invite_code">HNGNIG</string>
@@ -159,5 +159,9 @@
     <string name="arrival_small_caps">Arrival</string>
     <string name="airline">Airline</string>
     <string name="review">REVIEW</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_review_recent_stay">ReviewRecentStayActivity</string>
+    <string name="title_activity_flight_reservation_receipt">FlightReservationReceiptActivity
+    </string>
 
 </resources>
