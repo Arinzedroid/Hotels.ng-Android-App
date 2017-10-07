@@ -17,7 +17,7 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.AppBarOverlay.AddCardFragment" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
-        <item name="colorPrimary"></item>
+        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="android:textColor">@color/colorPrimary</item>
 
     </style>
@@ -34,13 +34,9 @@
 
     <style name="booking_details_heading">
 
-        <item name="android:textSize">
-            14sp
-        </item>
+        <item name="android:textSize">14sp</item>
 
-        <item name="android:textColor">
-            #3D9EE3
-        </item>
+        <item name="android:textColor">#3D9EE3</item>
 
     </style>
 

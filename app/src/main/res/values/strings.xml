@@ -29,6 +29,11 @@
     <string name="checkout_email">Email Address</string>
     <string name="checkout_button">Proceed</string>
 
+
+
+    <string name="facebook_app_id">551060571900219</string>
+    <string name="fb_login_protocol_scheme">fb551060571900219</string>
+
     <string name="app_name_small">hotels.ng</string>
     <string name="slow_network">This is taking longer....</string>
     <string name="slow_network_title">We have detected that you seem to be using  a slow network connection. Would you like to change your settings?</string>
@@ -41,8 +46,7 @@
     <string name="language_settings_preferred">Choose your preferred language</string>
     <string name="language_settings_button">Save Changes</string>
 
-    <string name="facebook_app_id">1204775476320820</string>
-    <string name="fb_login_protocol_scheme">fb1204775476320820</string>
+
     <string name="already_have_an_account">Already have an account?</string>
     <string name="hotel_rating_wonderful">Wonderful</string>
     <string name="overall_guest_score">overall guest score</string>
@@ -135,7 +139,7 @@
     <string name="date">11</string>
     <string name="arrival_town">Lagos</string>
     <string name="departure_town">Uyo</string>
-    <string name="depature">DEPATURE</string>
+    <string name="depature">DEPARTURE</string>
     <string name="depature_time">12.00PM</string>
     <string name="arrival">ARRIVAL</string>
     <string name="arrival_time">13.00PM</string>
@@ -151,7 +155,7 @@
     <string name="hardcode_invite_code">HNGNIG</string>
     <string name="share_text">Share invite code</string>
     <string name="terms_of_use">TERMS OF USE</string>
-    <string name="invite">invite</string>
+    <string name="invite">Invite</string>
     <string name="booking_history">Booking History</string>
     <string name="day_month_short">Sep. Monday</string>
     <string name="separator">-</string>
@@ -163,5 +167,29 @@
     <string name="title_activity_review_recent_stay">ReviewRecentStayActivity</string>
     <string name="title_activity_flight_reservation_receipt">FlightReservationReceiptActivity
     </string>
+    <string name="special_promo">Special Promo</string>
+    <string name="history">History</string>
+    <string name="loyalty_balance">My Balance\n  100250.00lc</string>
+    <string name="gain">Gain</string>
+    <string name="profile_name">SALAKO ADETUNJI</string>
+    <string name="title_name_loyalty">Loyalty Coins</string>
+    <string name="booking">Uyo - Lagos</string>
+
+	<string name="mo_capture">MoCapture</string>
+    <string name="action_settings_two">Action Settings</string>
+    <string-array name="image_ids">
+        <item>@drawable/img1</item>
+        <item>@drawable/img2</item>
+        <item>@drawable/img3</item>
+        <item>@drawable/img4</item>
+        <item>@drawable/img5</item>
+        <item>@drawable/img6</item>
+        <item>@drawable/img7</item>
+        <item>@drawable/img8</item>
+        <item>@drawable/img9</item>
+        <item>@drawable/img10</item>
+        <item>@drawable/img11</item>
+        <item>@drawable/img12</item>
+    </string-array>
 
 </resources>

@@ -11,6 +11,8 @@ import ng.hotels.android.app.ui.fragments.LoginFragment;
 import ng.hotels.android.app.ui.fragments.SignUpFragment;
 
 
+
+
 public class UserAuthenticationActivity extends AppCompatActivity implements
         LoginFragment.OnFragmentInteractionListener,
         SignUpFragment.OnFragmentInteractionListener{
@@ -44,6 +46,7 @@ public class UserAuthenticationActivity extends AppCompatActivity implements
                 .commit();
     }
 
+
     private void showHomePage() {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
@@ -56,6 +59,7 @@ public class UserAuthenticationActivity extends AppCompatActivity implements
             loginFragment = null;
             showSignInFragment();
         } else {
+
             showHomePage();
         }
     }

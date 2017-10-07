@@ -21,23 +21,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
+
 
         <activity
             android:name=".ui.activities.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".ui.activities.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
         <activity
             android:name=".ui.activities.HomeActivity"
             android:label="@string/title_activity_home"
@@ -56,17 +81,25 @@
         <activity android:name=".ui.activities.SuccessfulBookingActivity" />
         <activity android:name=".ui.activities.BookingActivity" />
         <activity android:name=".ui.activities.CardInfoActivity" />
-        <activity android:name=".ui.activities.InviteFriendsActivity" />
-        <activity android:name=".ui.activities.CustomerServiceStartConversationActivity" />
+        <activity android:name=".ui.activities.InviteFriendsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activities.BookingHistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activities.UserProfileActivity"/>
+        <activity
+            android:name=".ui.activities.SettingsActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ui.activities.CustomerServiceStartConversationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.activities.CustomerServiceChatActivity"
             android:label="@string/title_activity_customer_service_chat"
+            android:theme="@style/AppTheme.NoActionBar"
             android:parentActivityName=".ui.activities.CustomerServiceStartConversationActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ng.hotels.android.app.ui.activities.CustomerServiceStartConversationActivity" />
         </activity>
-        <activity android:name=".ui.activities.BookingHistoryActivity" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -79,6 +112,9 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+		<activity
+            android:name=".ui.activities.MocaptureActivity"
+            android:label="@string/mo_capture" />
 
         <activity
             android:name=".ui.activities.MapsActivity"
@@ -88,7 +124,7 @@
             android:label="@string/title_activity_review_recent_stay" />
         <activity
             android:name=".ui.activities.FlightReservationReceiptActivity"
-            android:label="@string/title_activity_flight_reservation_receipt"></activity>
+            android:label="@string/title_activity_flight_reservation_receipt"/>
     </application>
 
 </manifest>

@@ -5,12 +5,14 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import javax.inject.Inject;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import dagger.android.AndroidInjection;
 import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
@@ -30,12 +32,16 @@ public class CustomerServiceChatActivity extends AppCompatActivity implements Ha
     @Inject
     CustomerServiceChatAdapter customerServiceChatAdapter;
 
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_service_chat);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ButterKnife.bind(this);
+        setupToolbar();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(customerServiceChatAdapter);
     }
@@ -69,8 +75,12 @@ public class CustomerServiceChatActivity extends AppCompatActivity implements Ha
 
     private void showDialog(){
 
+    }
 
-
+    private void setupToolbar() {
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle(null);
     }
 
 }

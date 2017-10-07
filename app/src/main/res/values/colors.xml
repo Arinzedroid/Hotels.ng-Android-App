@@ -19,6 +19,6 @@
     <color name="check_out_grey">#ececec</color>
     <color name="text_color">#000</color>
     <color name="receipt_color">#333333</color>
-
+	<color name="blue">#00abea</color>
 
 </resources>

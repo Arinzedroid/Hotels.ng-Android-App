@@ -6,7 +6,7 @@ import dagger.BindsInstance;
 import dagger.Component;
 import dagger.android.AndroidInjector;
 import dagger.android.support.AndroidSupportInjectionModule;
-import ng.hotels.android.app.di.ActivityBindingModule;
+import ng.hotels.android.app.di.modules.ActivityBindingModule;
 
 /**
  * Created by idee on 9/28/17.

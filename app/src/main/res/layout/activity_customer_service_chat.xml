@@ -20,9 +20,12 @@
             app:popupTheme="@style/AppTheme.PopupOverlay">
 
             <LinearLayout
+                android:layout_marginLeft="-10dp"
+                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="-10dp">
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     xmlns:app="http://schemas.android.com/apk/res-auto"

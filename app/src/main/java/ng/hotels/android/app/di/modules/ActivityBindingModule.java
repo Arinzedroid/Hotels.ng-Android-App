@@ -1,8 +1,10 @@
-package ng.hotels.android.app.di;
+package ng.hotels.android.app.di.modules;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
+import ng.hotels.android.app.di.modules.CustomerServiceChatModule;
 import ng.hotels.android.app.di.modules.OnBoardingActivityModule;
+import ng.hotels.android.app.ui.activities.CustomerServiceChatActivity;
 import ng.hotels.android.app.ui.activities.MainActivity;
 import ng.hotels.android.app.ui.activities.OnBoardingActivity;
 
@@ -18,5 +20,8 @@ public abstract class ActivityBindingModule {
 
     @ContributesAndroidInjector(modules = OnBoardingActivityModule.class)
     abstract OnBoardingActivity onboardingActivity();
+
+    @ContributesAndroidInjector(modules= CustomerServiceChatModule.class)
+    abstract CustomerServiceChatActivity customerServiceChatActivity();
 
 }
