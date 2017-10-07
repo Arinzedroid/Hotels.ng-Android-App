@@ -64,6 +64,7 @@
             android:name=".ui.activities.FlightDetailActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activities.UserAuthenticationActivity" />
+        <activity android:name=".ui.activities.HelpActivity" />
         <activity android:name=".ui.activities.SingleHotelPageActivity" />
         <activity
             android:name=".ui.activities.OnBoardingActivity"
